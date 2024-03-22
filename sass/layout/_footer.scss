@@ -1,0 +1,163 @@
+.footer {
+    background-color: $title-color;
+    width: 100%;
+    color: white;
+    padding: 45px 0 8px 0;
+
+
+
+    @include respond-to("small") {
+        padding-bottom: 17px;
+        padding-top: 80px;
+    }
+
+    &__flex {
+
+        display: block;
+
+        @include respond-to("small") {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-bottom: 40px;
+        }
+    }
+
+    &__left {
+        margin-bottom: 49px;
+        display: block;
+
+        a {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        @include respond-to("small") {
+            display: flex;
+            flex-direction: row;
+            gap: 64px;
+            font-size: 15px;
+            font-weight: 400;
+
+            p {
+                padding-bottom: 20px;
+                font-size: 17px;
+
+            }
+
+            a {
+                // color: white;
+                font-size: 15px;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+
+            li {
+                margin-bottom: 14px;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    &__right {
+
+
+        padding-bottom: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        gap: 22px;
+
+        @include respond-to("small") {
+            align-items: end;
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+    }
+
+    &__social {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        a {
+            padding-right: 22px;
+
+            @include respond-to("small") {
+                padding-left: 22px;
+                padding-right: 0;
+            }
+
+            svg path {
+                transition: all 0.3s ease-in-out;
+            }
+
+            svg path:hover {
+                fill: $primary-color;
+            }
+        }
+    }
+
+    &__copyright p {
+        margin-bottom: 0;
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.8);
+
+        @include respond-to("small") {
+            font-size: 14px;
+        }
+    }
+
+    &__izrazajnost-logo {
+        display: none;
+
+        @include respond-to("small") {
+            display: block;
+            font-size: 15px;
+        }
+    }
+
+       
+
+
+
+        &__informacije {
+            margin-bottom: 30px;
+
+            @include respond-to("small") {
+                margin-bottom: 0;
+            }
+        }
+
+        &__informacije p {
+            margin-bottom: 12px;
+
+            @include respond-to("small") {
+                margin-bottom: 0;
+            }
+        }
+
+        .paragraph-small li {
+            margin-bottom: 14px;
+
+            li:first-of-type {
+                margin-bottom: 20px;
+            }
+        }
+
+
+
+    
+
+    &__izrazajnost-logo-mobile img {
+        @include respond-to("small") {
+            display: none;
+        }
+    }
+}

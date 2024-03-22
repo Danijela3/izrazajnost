@@ -1,0 +1,58 @@
+// .text-white {
+//     color: white;
+    
+// }
+
+
+// section {
+//     padding-top: 80px;
+//     padding-bottom: 70px;
+// }
+
+// .no-scroll {
+//     overflow-y: hidden;
+// }
+
+// .desktop-hide {
+//     @include respond-to("medium") {
+//         display: none !important;
+//     }
+// }
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+
+    
+}
+
+body {
+    font-family: $font;
+}
+
+.arrow-down {
+    // background: black;
+    display: block;
+    height: 6px;
+    width: 6px;
+    top: 35px;
+    right: 120px;
+    position: absolute;
+    border-right: 1px solid $title-color;
+    border-bottom: 1px solid $title-color;
+    rotate: 45deg;
+    position: absolute;
+
+    &:hover {
+        border-right: 1px solid $primary-color;
+        border-bottom: 1px solid $primary-color;
+
+    }
+}
+
+.no-scroll {
+    overflow-y: hidden;
+}
+
+ 

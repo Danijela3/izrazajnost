@@ -1,0 +1,76 @@
+.edukacije {
+    padding-top: 60px;
+
+    @include respond-to("small") {
+    padding-bottom: 60px;
+    }
+
+    @include respond-to("medium") {
+        padding-top: 120px;
+        padding-bottom: 117px;
+        display: block;
+
+    }
+
+    @include respond-to("small") {
+
+        &__grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            column-gap: 45px;
+            row-gap: 120px;
+        }
+    }
+
+    .h2 {
+
+        border-top: none;
+        text-transform: uppercase;
+        padding-top: 10px;
+        
+
+        @include respond-to("small") {
+            border-top: 1px solid $border-color;
+            padding-top: 40px;
+        }
+    }
+
+
+    @include respond-to("small") {
+
+        &__flex {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            justify-content: space-around;
+
+            @include respond-to("small") {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__description-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 393px;
+        margin-bottom: 50px;
+
+        @include respond-to("small") {
+            margin-bottom: 0;
+        }
+    }
+
+    .button__dark-border {
+
+        margin-top: 22px;
+
+        @include respond-to("small") {
+        margin-top: 42px;
+        }
+    }
+}

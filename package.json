@@ -1,0 +1,32 @@
+{
+  "name": "izrazajnost",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Danijela3/izrazajnost.git"
+  },
+  "author": "Danijela",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Danijela3/izrazajnost/issues"
+  },
+  "homepage": "https://github.com/Danijela3/izrazajnost#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "jest": "^29.7.0",
+    "sass": "^1.69.5"
+  },
+  "dependencies": {
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-line-ending-corrector": "^1.0.3",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1"
+  }
+}

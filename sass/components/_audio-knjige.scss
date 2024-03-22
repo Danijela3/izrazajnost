@@ -1,0 +1,97 @@
+.audio-knjige {
+
+    
+    display: block;
+    padding-bottom: 40px;
+
+
+    @include respond-to("small") {
+    padding-bottom: 60px;
+    }
+
+
+    .h2 {
+
+        margin-top: 20px;
+        text-transform: uppercase;
+        @include respond-to("small") {
+            margin-top: 0;
+        }
+
+    }
+
+
+
+    &__header {
+        
+        border-top: 1px solid $border-color;
+        margin-bottom: 30px;
+       
+
+        @include respond-to("small") {
+            display: flex;
+            // grid-template-columns: 1fr 1fr;
+            justify-content: space-between;
+            // gap: 50px;
+            padding-top: 40px;
+            margin-bottom: 0;
+
+        }
+
+    }
+
+
+
+
+
+
+    p {
+        max-width: 498px;
+
+        @include respond-to("small") {
+            // max-width: 365px;
+        }
+
+    }
+
+
+
+    &__content {
+        display: block;
+
+        p {
+            text-transform: uppercase;
+            color: $title-color;
+            font-weight: 600;
+        }
+
+        @include respond-to("small") {
+            display: flex;
+            flex-direction: row;
+            gap: 32px;
+            padding-top: 72px;
+            padding-bottom: 18px;
+
+
+        }
+    }
+
+
+
+    &__cards {
+        margin-bottom: 20px;
+
+        @include respond-to("small") {
+            margin-bottom: 0;
+        }
+    }
+
+    &__image {
+        img {
+            aspect-ratio: 1.53; 
+            object-fit: cover;
+            border-radius: 6px;
+        }
+    }
+
+}

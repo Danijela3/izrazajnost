@@ -1,0 +1,104 @@
+.newsletter {
+    background-color:rgba(101, 189, 232, 1);
+
+    
+    background-image: url('images/watermark-newsletter-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+
+    @include respond-to("small") {
+        padding-top: 123px;
+    padding-bottom: 143px;
+    background-image: url('images/logo-light.svg');
+    }
+
+    &__flex {
+        display: block;
+        max-width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include respond-to("small") {
+            display: flex;
+            justify-content: space-between;
+            max-width: none;
+            gap: 70px;
+            
+        }
+
+        @include respond-to("large") {
+            gap: 258px;
+        }
+
+       
+
+        h2 {
+            margin-bottom: 86px;
+            text-transform: uppercase;
+            font-size: 38px;
+            line-height: 45.6px;
+            font-weight: 500;
+
+            @include respond-to("small") {
+                max-width: 500px;
+                margin-bottom: 0;
+                line-height: normal;
+                font-size: 48px;
+            }
+        }
+
+        p {
+            // max-width: 499px;
+            margin-bottom: 20px;
+            color: $title-color;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 19px;
+
+            @include respond-to("small") {
+                margin-bottom: 30px;
+                font-size: 17px;
+            }
+        }
+
+        input {
+            border: none;
+            border-radius: 3px;
+            // min-width: 372px;
+            padding-left: 19px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            width: 100%;
+
+            &::placeholder {
+                color: $background-dark;
+                font-size: 17px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    &__email {
+        display: flex;
+        gap: 5px;
+
+        @include respond-to("small") {
+            
+            gap: 9px;
+            text-align: center;
+        }
+    }
+
+    .button__dark-background {
+        font-weight: 500;
+        margin-top: 0;
+    }
+
+    &__right {
+        max-width: 499px;
+    }
+}
