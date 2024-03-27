@@ -32,7 +32,7 @@
                     </div>
 
 
-                    <div class="header__mobile">
+                   <div class="header__mobile">
 
                         <div class="header__mobile-navigation" id="mobile-navigation">
 
@@ -49,7 +49,7 @@
                                     <path
                                         d="M18.804 16.9465C19.0506 17.193 19.1891 17.5275 19.1891 17.8762C19.1891 18.2249 19.0506 18.5593 18.804 18.8059C18.5575 19.0524 18.223 19.1909 17.8743 19.1909C17.5256 19.1909 17.1912 19.0524 16.9447 18.8059L10.0004 11.8594L3.05403 18.8037C2.80747 19.0502 2.47305 19.1888 2.12435 19.1888C1.77565 19.1888 1.44123 19.0502 1.19466 18.8037C0.948091 18.5571 0.80957 18.2227 0.80957 17.874C0.80957 17.5253 0.948091 17.1909 1.19466 16.9443L8.14107 10.0001L1.19685 3.05366C0.950278 2.80709 0.811758 2.47268 0.811758 2.12398C0.811758 1.77528 0.950278 1.44086 1.19685 1.19429C1.44342 0.94772 1.77783 0.809199 2.12653 0.809199C2.47523 0.809199 2.80965 0.94772 3.05622 1.19429L10.0004 8.1407L16.9468 1.19319C17.1934 0.946626 17.5278 0.808105 17.8765 0.808105C18.2252 0.808105 18.5597 0.946626 18.8062 1.19319C19.0528 1.43976 19.1913 1.77418 19.1913 2.12288C19.1913 2.47158 19.0528 2.806 18.8062 3.05257L11.8598 10.0001L18.804 16.9465Z"
                                         fill="#1D4951" />
-                                </svg>
+                                 </svg>
                             </div>
                         </div>
 
@@ -401,15 +401,17 @@
 
 
                     <div class="mediji__grid-cards">
-                        <svg width="45" height="47" viewBox="0 0 45 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="play-btn" data-modal="modal1" width="45" height="47" viewBox="0 0 45 47" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M42.6295 19.9265L7.27232 1.22998C4.39955 -0.288378 0 1.18506 0 4.94053V42.3245C0 45.6936 4.08817 47.7241 7.27232 46.0351L42.6295 27.3476C45.7835 25.6854 45.7935 21.5886 42.6295 19.9265Z"
                                 fill="white" />
                         </svg>
                         <img src="images/milan-o-kulturi.png">
-                        <div class="modal">
+                        <div id="modal1" class="modal">
+                            
                             <div class="modal-content">
-                                <iframe width="560" height="315"
+                                <span class="close">&times;</span>
+                                <iframe id="videoIframe" width="944" height="533"
                                     src="https://www.youtube.com/embed/sBuPorRpkNI?si=rjQOIJQVgAQohvP2"
                                     title="YouTube video player" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -420,15 +422,16 @@
 
 
                     <div class="mediji__grid-cards">
-                        <svg width="45" height="47" viewBox="0 0 45 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="play-btn" data-modal="modal2" width="45" height="47" viewBox="0 0 45 47" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M42.6295 19.9265L7.27232 1.22998C4.39955 -0.288378 0 1.18506 0 4.94053V42.3245C0 45.6936 4.08817 47.7241 7.27232 46.0351L42.6295 27.3476C45.7835 25.6854 45.7935 21.5886 42.6295 19.9265Z"
                                 fill="white" />
                         </svg>
                         <img src="images/dikcija.png">
 
-                        <div class="modal">
+                        <div id="modal2" class="modal">
                             <div class="modal-content">
+                                <span class="close">&times;</span>
                                 <iframe width="560" height="315"
                                     src="https://www.youtube.com/embed/_Lv_VxPL5JQ?si=tWOyTW6GMmVDrKOL"
                                     title="YouTube video player" frameborder="0"
@@ -440,14 +443,15 @@
 
 
                     <div class="mediji__grid-cards">
-                        <svg width="45" height="47" viewBox="0 0 45 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="play-btn" data-modal="modal3" width="45" height="47" viewBox="0 0 45 47" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M42.6295 19.9265L7.27232 1.22998C4.39955 -0.288378 0 1.18506 0 4.94053V42.3245C0 45.6936 4.08817 47.7241 7.27232 46.0351L42.6295 27.3476C45.7835 25.6854 45.7935 21.5886 42.6295 19.9265Z"
                                 fill="white" />
                         </svg>
                         <img src="images/mare.png">
-                        <div class="modal">
+                        <div id="modal3" class="modal">
                             <div class="modal-content">
+                                <span class="close">&times;</span>
                                 <iframe width="560" height="315"
                                     src="https://www.youtube.com/embed/d5Wy_PvooO0?si=Vn9qiiE8Zu1bOHN6"
                                     title="YouTube video player" frameborder="0"

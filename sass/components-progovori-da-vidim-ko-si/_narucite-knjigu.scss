@@ -1,0 +1,54 @@
+.narucite {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: $background-light;
+
+    h2 {
+        text-transform: uppercase;
+        margin-bottom: 30px;
+       
+    }
+
+    p {
+        color: $background-dark;
+    }
+
+    // ul {
+    //     list-style-type: disc;
+    //     padding-left: 20px;
+    // }
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+        justify-content: start;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .button__white-button {
+        margin-left: 0;
+    }
+
+    &__flex {
+        @include respond-to("medium") {
+            display: flex;
+        }
+    }
+
+    &__flex-left {
+        @include respond-to("medium") {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__buttons-flex {
+        @include respond-to("medium") {
+            display: flex;
+            gap: 20px;
+        }
+    }
+}

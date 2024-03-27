@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <header class="header-sticky-white">
+        <div class="container">
+            <div class="header-sticky-white__row">
+                <div class="header-sticky-white__left">
+                    <div class="header-sticky-white__mobile-logo">
+                        <img src="images/logo-mobile.svg">
+                    </div>
+
+                    <div class="header-sticky-white__mobile">
+
+                        <div class="header-sticky-white__mobile-navigation" id="mobile-navigation">
+
+                            <div class="header-sticky-white__hamburger-button" id="hamburger-button">
+                                <div class="header-sticky-white__span">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="header-sticky-white__close-button" id="close-button">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.804 16.9465C19.0506 17.193 19.1891 17.5275 19.1891 17.8762C19.1891 18.2249 19.0506 18.5593 18.804 18.8059C18.5575 19.0524 18.223 19.1909 17.8743 19.1909C17.5256 19.1909 17.1912 19.0524 16.9447 18.8059L10.0004 11.8594L3.05403 18.8037C2.80747 19.0502 2.47305 19.1888 2.12435 19.1888C1.77565 19.1888 1.44123 19.0502 1.19466 18.8037C0.948091 18.5571 0.80957 18.2227 0.80957 17.874C0.80957 17.5253 0.948091 17.1909 1.19466 16.9443L8.14107 10.0001L1.19685 3.05366C0.950278 2.80709 0.811758 2.47268 0.811758 2.12398C0.811758 1.77528 0.950278 1.44086 1.19685 1.19429C1.44342 0.94772 1.77783 0.809199 2.12653 0.809199C2.47523 0.809199 2.80965 0.94772 3.05622 1.19429L10.0004 8.1407L16.9468 1.19319C17.1934 0.946626 17.5278 0.808105 17.8765 0.808105C18.2252 0.808105 18.5597 0.946626 18.8062 1.19319C19.0528 1.43976 19.1913 1.77418 19.1913 2.12288C19.1913 2.47158 19.0528 2.806 18.8062 3.05257L11.8598 10.0001L18.804 16.9465Z"
+                                        fill="#1D4951" />
+                                </svg>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="header-sticky-white__header-right">
+                    <div class="header-sticky-white__navigation" id="navigation">
+
+                        <nav>
+                            <ul>
+                                <li class="header-sticky-white__border-mobile"><a href="#o-nama" class="header__links">O
+                                        nama</a>
+                                </li>
+                                <li class="header-sticky-white__border-mobile has-submenu"><a href="#aktivnosti"
+                                        class="header-sticky-white__links">Aktivnosti
+                                        udruženja<svg width="13" height="7" viewBox="0 0 13 7" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M7.03033 6.53033C6.73744 6.82322 6.26256 6.82322 5.96967 6.53033L0.96967 1.53033C0.676777 1.23744 0.676777 0.762563 0.96967 0.46967C1.26256 0.176777 1.73744 0.176777 2.03033 0.46967L6.5 4.93934L10.9697 0.46967C11.2626 0.176777 11.7374 0.176777 12.0303 0.46967C12.3232 0.762563 12.3232 1.23744 12.0303 1.53033L7.03033 6.53033Z"
+                                                fill="#616161" />
+                                        </svg></a>
+                                    <ul class="header-transparent__aktivnosti-dropdown">
+                                        <li class="header-sticky-white__dropdown-items">Edukacija dece i mladih</li>
+                                        <li class="header-sticky-white__dropdown-items">Edukacija prosvetnih radnika
+                                        </li>
+                                        <li class="header-sticky-white__dropdown-items">Karavan kulture govora</li>
+                                        <li class="header-sticky-white__dropdown-items">Audio knjige</li>
+                                        <li class="header-sticky-white__dropdown-items">Edukativna predstava u tri čina
+                                            “Izrazi se”
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header-sticky-white__border-mobile"><a href="#knjiga"
+                                        class="header-transparent__links">Knjiga -
+                                        Progovori da vidim ko si</a></li>
+                                <li class="header-sticky-white__border-mobile"><a href="#blog"
+                                        class="header-transparent__links">Blog</a></li>
+                                <li><a href="#lat" class="header__links">Lat<svg width="13" height="7"
+                                            viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M7.03033 6.53033C6.73744 6.82322 6.26256 6.82322 5.96967 6.53033L0.96967 1.53033C0.676777 1.23744 0.676777 0.762563 0.96967 0.46967C1.26256 0.176777 1.73744 0.176777 2.03033 0.46967L6.5 4.93934L10.9697 0.46967C11.2626 0.176777 11.7374 0.176777 12.0303 0.46967C12.3232 0.762563 12.3232 1.23744 12.0303 1.53033L7.03033 6.53033Z"
+                                                fill="#616161" />
+                                        </svg></span></a></li>
+                                <div class="header-sticky-white__contact-button">
+                                    <li><a href="#kontakt" class="button button__primary">Kontakt</a></li>
+                                </div>
+                            </ul>
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="blog">
+            <div class="container">
+                <div class="blog__main">
+                    <div class="blog__main-left">
+                        <div>
+                            <div class="blog__author">
+                                <p>Brajan Skudamur</p>
+                            </div>
+                            <h2>Da li će publika pravilno razumeti našu poruku</h2>
+                        </div>
+                        <div>
+                            <div class="blog__text">
+                                <p>Lorem ipsum dolor sit amet consectetur. Quam imperdiet pulvinar morbi vitae in
+                                    condimentum
+                                    in. Tortor consequat enim enim at phasellus nisl vel pulvinar. Lacus purus semper
+                                    elit
+                                    tellus vel fermentum consequat. Dui diam nisl felis quam </p>
+                            </div>
+                            <svg width="35" height="23" viewBox="0 0 35 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M34.938 11.5001L23.6202 22.8205L21.7794 20.9823L29.9616 12.8001L0.599789 12.8001V10.2001L29.9616 10.2001L21.7794 2.02049L23.6202 0.179687L34.938 11.5001Z"
+                                    fill="#1D4951" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div><img src="images-blog/publika-blog.jpg"></div>
+
+                </div>
+                <div class="blog__sve-blog-vesti"><!--sve/blog/vesti-->
+                    <a href="/">SVE</a>
+                    <a href="/">BLOG</a>
+                    <a href="/">VESTI</a>
+                </div>
+
+
+                <div class="blog__flex">
+                    <div class="blog__flex-cards">
+                        <div><img src="images-blog/blog5.jpg"></div>
+                        <div class="blog__flex-description">
+                            <div>
+                                <p>Brajan Skudamur</p>
+                                <h3 class="blog-title-2">Govor nastavnika</h3>
+                            </div>
+                            <div>
+                            <p>Lorem ipsum dolor sit amet consectetur. Quam imperdiet pulvinar morbi vitae in
+                                condimentum in. Tortor consequat enim enim at phasellus nisl vel pulvinar. Lacus purus
+                                semper elit tellus vel fermentum consequat. Dui diam nisl felis quam hs...</p>
+                            <span></span>
+                        </div>
+                        </div>
+                    </div>
+
+
+                    <div class="blog__flex-cards">
+                        <div><img src="images-blog/blog4.jpg"></div>
+                        <div class="blog__flex-description">
+                            <div>
+                                <p>Brajan Skudamur</p>
+                                <h3 class="blog-title-2">Kako da ono što izgovaramo bude zanimljivo?</h3>
+                            </div>
+                            <div>
+                            <p>Lorem ipsum dolor sit amet consectetur. Quam imperdiet pulvinar morbi vitae in
+                                condimentum in. Tortor consequat enim enim at phasellus nisl vel pulvinar. Lacus purus
+                                semper elit tellus vel fermentum consequat. Dui diam nisl felis quam hs...</p>
+                            <span></span>
+                        </div>
+                        </div>
+                    </div>
+
+
+                    <div class="blog__flex-cards">
+                        <div><img src="images-blog/blog2.jpg"></div>
+                        <div class="blog__flex-description">
+                            <div>
+                                <p>Brajan Skudamur</p>
+                                <h3 class="blog-title-2">Da li je strah od javnog nastupa zaista jači od smrti?</h3>
+                            </div>
+                            <div>
+                            <p>Lorem ipsum dolor sit amet consectetur. Quam imperdiet pulvinar morbi vitae in
+                                condimentum in. Tortor consequat enim enim at phasellus nisl vel pulvinar. Lacus purus
+                                semper elit tellus vel fermentum consequat. Dui diam nisl felis quam hs...</p>
+                            <span></span>
+                        </div>
+                        </div>
+                    </div>
+
+
+                    <div class="blog__flex-cards">
+                        <div><img src="images-blog/blog1.jpg"></div>
+                        <div class="blog__flex-description">
+                            <div>
+                                <p>Brajan Skudamur</p>
+                                <h3 class="blog-title-2">Priprema za javni nastup</h3>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur. Quam imperdiet pulvinar morbi vitae in
+                                    condimentum in. Tortor consequat enim enim at phasellus nisl vel pulvinar. Lacus
+                                    purus
+                                    semper elit tellus vel fermentum consequat. Dui diam nisl felis quam hs...</p>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="blog__flex-cards">
+                        <div><img src="images-blog/blog3.jpg"></div>
+                        <div class="blog__flex-description">
+                            <div>
+                                <p>Brajan Skudamur</p>
+                                <h3 class="blog-title-2">Nije monotonija</h3>
+                            </div>
+                            <div>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet consectetur. Quam imperdiet pulvinar morbi vitae in
+                                        condimentum in. Tortor consequat enim enim at phasellus nisl vel pulvinar. Lacus
+                                        purus
+                                        semper elit tellus vel fermentum consequat. Dui diam nisl felis quam hs...</p>
+
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--pogledaj jos button-->
+                        
+                    </div>
+                    <div class="blog__button"><a href="/" class="button button__gray-background">POGLEDAJ JOŠ</a></div>
+                </div>
+        </section>
+    </main>
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__flex">
+                <div class="footer__left">
+                    <div class="footer__informacije">
+                        <p>Informacije</p>
+                        <ul class="paragraph-small">
+                            <li><a href="#o-nama">O nama</a></li>
+                            <li><a href="#aktivnosti">Aktivnosti udruženja</a></li>
+                            <li><a href="#knjiga">Knjiga- Progovori da vidim ko si</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="paragraph-small">
+                        <p>Kontakt podaci</p>
+                        <p><a href="#o-nama">Email<br>
+                                kulturagovora@izrazajnost.edu.rs</a></p>
+                    </div>
+                </div>
+
+
+
+                <div class="footer__right">
+                    <div class="footer__social">
+                        <div>
+                            <a href="/"><svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M23 11.5288C23 5.16491 17.848 0 11.5 0C5.152 0 0 5.16491 0 11.5288C0 17.1088 3.956 21.7549 9.2 22.8271V14.9875H6.9V11.5288H9.2V8.64662C9.2 6.42155 11.0055 4.61153 13.225 4.61153H16.1V8.07018H13.8C13.1675 8.07018 12.65 8.58897 12.65 9.22306V11.5288H16.1V14.9875H12.65V23C18.4575 22.4236 23 17.5123 23 11.5288Z"
+                                        fill="white" />
+                                </svg></a>
+                        </div>
+                        <div>
+                            <a href="/"><svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.1308 0.00141491C12.9335 -0.00180524 13.7361 0.00662871 14.5386 0.0267141L14.752 0.0347638C14.9984 0.0439635 15.2415 0.0554631 15.5351 0.0692626C16.7055 0.126761 17.504 0.319954 18.2047 0.603995C18.9307 0.896085 19.5422 1.29167 20.1538 1.93105C20.713 2.50558 21.1458 3.20054 21.422 3.96763C21.6937 4.70016 21.8785 5.53618 21.9335 6.75973C21.9467 7.06562 21.9577 7.32092 21.9665 7.57851L21.9731 7.8016C21.9927 8.64014 22.0011 9.47893 21.9984 10.3177L21.9995 11.1756V12.682C22.0022 13.5212 21.9938 14.3604 21.9742 15.1993L21.9676 15.4224C21.9588 15.68 21.9478 15.9341 21.9346 16.2412C21.8796 17.4647 21.6926 18.2996 21.422 19.0321C21.1467 19.8 20.7138 20.4956 20.1538 21.0698C19.6038 21.6544 18.9387 22.1068 18.2047 22.3958C17.504 22.6798 16.7055 22.873 15.5351 22.9305C15.2415 22.9443 14.9984 22.9558 14.752 22.965L14.5386 22.9719C13.7362 22.9923 12.9335 23.0011 12.1308 22.9983L11.3103 22.9995H9.87043C9.06776 23.0023 8.26509 22.9935 7.46265 22.973L7.24926 22.9661C6.98815 22.9562 6.72709 22.9447 6.4661 22.9316C5.29576 22.8741 4.4972 22.6786 3.79544 22.3958C3.06143 22.1075 2.39657 21.655 1.84744 21.0698C1.28762 20.4952 0.854437 19.7998 0.578105 19.0321C0.306419 18.2996 0.121628 17.4647 0.0666312 16.2412C0.054381 15.9683 0.0433815 15.6954 0.0336329 15.4224L0.0281334 15.1993C0.00785435 14.3604 -0.00131283 13.5212 0.000634668 12.682V10.3177C-0.00243524 9.47893 0.00563187 8.64015 0.0248335 7.8016L0.0325331 7.57851C0.0413326 7.32092 0.052332 7.06562 0.0655314 6.75973C0.120529 5.53503 0.305319 4.7013 0.577005 3.96763C0.853501 3.20017 1.28753 2.50539 1.84854 1.9322C2.3973 1.34658 3.06173 0.893293 3.79544 0.603995C4.4972 0.319954 5.29466 0.126761 6.4661 0.0692626L7.24926 0.0347638L7.46265 0.0290142C8.26471 0.00782362 9.06701 -0.00176042 9.86933 0.000265029L12.1308 0.00141491ZM11.0001 5.75122C10.2714 5.74044 9.54788 5.88119 8.87165 6.16528C8.19543 6.44937 7.57996 6.87114 7.061 7.40608C6.54205 7.94101 6.12996 8.57844 5.84869 9.28133C5.56742 9.98421 5.42258 10.7385 5.42258 11.5004C5.42258 12.2624 5.56742 13.0167 5.84869 13.7196C6.12996 14.4225 6.54205 15.0599 7.061 15.5948C7.57996 16.1298 8.19543 16.5515 8.87165 16.8356C9.54788 17.1197 10.2714 17.2605 11.0001 17.2497C12.4587 17.2497 13.8576 16.6439 14.889 15.5656C15.9204 14.4873 16.4998 13.0248 16.4998 11.4999C16.4998 9.97493 15.9204 8.51245 14.889 7.43415C13.8576 6.35585 12.4587 5.75122 11.0001 5.75122ZM11.0001 8.05114C11.4384 8.0427 11.874 8.12566 12.2813 8.29517C12.6886 8.46469 13.0595 8.71736 13.3724 9.03843C13.6853 9.35951 13.9338 9.74254 14.1035 10.1652C14.2732 10.5878 14.3606 11.0415 14.3607 11.4999C14.3608 11.9582 14.2735 12.412 14.1039 12.8347C13.9344 13.2573 13.686 13.6405 13.3732 13.9616C13.0604 14.2828 12.6896 14.5356 12.2823 14.7053C11.875 14.8749 11.4395 14.958 11.0012 14.9498C10.126 14.9498 9.28668 14.5863 8.66784 13.9393C8.049 13.2923 7.70134 12.4148 7.70134 11.4999C7.70134 10.5849 8.049 9.70742 8.66784 9.06044C9.28668 8.41346 10.126 8.04999 11.0012 8.04999L11.0001 8.05114ZM16.7748 4.02628C16.4199 4.04113 16.0843 4.19895 15.8383 4.46668C15.5922 4.73441 15.4548 5.0913 15.4548 5.46258C15.4548 5.83386 15.5922 6.19074 15.8383 6.45848C16.0843 6.72621 16.4199 6.88403 16.7748 6.89888C17.1394 6.89888 17.4891 6.74744 17.747 6.47786C18.0048 6.20829 18.1497 5.84266 18.1497 5.46143C18.1497 5.08019 18.0048 4.71457 17.747 4.445C17.4891 4.17542 17.1394 4.02398 16.7748 4.02398V4.02628Z"
+                                        fill="white" />
+                                </svg></a>
+                        </div>
+                        <div>
+                            <a href="/"><svg width="26" height="19" viewBox="0 0 26 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.55898 0.254513C10.8462 -0.0848377 15.153 -0.0848377 19.4402 0.254513L22.3192 0.48339C23.099 0.544896 23.836 0.868714 24.4128 1.40324C24.9895 1.93776 25.3728 2.65223 25.5016 3.43278C26.1661 7.45112 26.1661 11.5514 25.5016 15.5684C25.3729 16.3488 24.9897 17.0631 24.4133 17.5976C23.8368 18.1321 23.1001 18.456 22.3205 18.5178L19.4415 18.7454C15.1539 19.0849 10.8466 19.0849 6.55898 18.7454L3.67992 18.5178C2.90015 18.4563 2.16316 18.1325 1.58641 17.598C1.00966 17.0635 0.626339 16.349 0.497535 15.5684C-0.165845 11.5511 -0.165845 7.45016 0.497535 3.43278C0.626282 2.65243 1.00942 1.93812 1.58591 1.40362C2.1624 0.869116 2.89909 0.545174 3.67864 0.48339L6.55769 0.255813L6.55898 0.254513ZM10.429 12.7127V6.28853C10.4291 6.21959 10.4473 6.15191 10.4816 6.09237C10.516 6.03284 10.5653 5.98358 10.6246 5.94962C10.6839 5.91566 10.7511 5.8982 10.8192 5.89902C10.8873 5.89985 10.954 5.91893 11.0125 5.95432L16.3041 9.1664C16.361 9.2011 16.4081 9.2501 16.4408 9.30866C16.4736 9.36722 16.4907 9.43334 16.4907 9.50061C16.4907 9.56787 16.4736 9.63399 16.4408 9.69255C16.4081 9.75111 16.361 9.80012 16.3041 9.83482L11.0125 13.0469C10.954 13.0823 10.8873 13.1014 10.8192 13.1022C10.7511 13.103 10.6839 13.0856 10.6246 13.0516C10.5653 13.0176 10.516 12.9684 10.4816 12.9088C10.4473 12.8493 10.4291 12.7816 10.429 12.7127Z"
+                                        fill="white" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="footer__copyright">
+                        <p><span></span>&#169;2023.Izražajnost</p>
+                        <p>Sva prava zadržana</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer__izrazajnost-logo"><img src="images/logo-full.png"></div>
+        </div>
+        <div class="footer__izrazajnost-logo-mobile"><img src="images/logo-full.png"></div>
+    </footer>
+
+
+
+</body>
+
+
+</html>

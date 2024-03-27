@@ -1,0 +1,63 @@
+.edukacija-prosvetnih-radnika {
+    padding-top: 40px;
+    
+    // padding-bottom: 40px;
+
+    h1, h3 {
+        text-transform: uppercase;
+    }
+
+    &__flex {
+        margin: 20px 0;
+        display: flex;
+        gap: 55px;
+
+    }
+
+    &__flex-right {
+        max-width: 579px;
+    }
+
+    &__images {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+
+    &__program-i-literatura {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    &__program {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        justify-content: flex-end;
+        margin-bottom: 40px;
+    }
+
+    &__literatura {
+        max-width: 579px;
+    }
+
+    &__background-photo {
+       background-image: url('images-edukacija-prosvetnih/prosveta4.jpg');
+       background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+        min-height: 570px;
+
+        p {
+            color: white;
+            max-width: 605px;
+            padding-top: 60px;
+            padding-left: 100px;
+        }
+       
+    }
+
+
+}

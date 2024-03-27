@@ -1,0 +1,26 @@
+.audio-knjige-main {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    h1, h4 {
+        text-transform: uppercase;
+    }
+
+    &__description {
+        margin-bottom: 20px;
+    }
+
+    &__cards {
+        margin-bottom: 20px;
+    }
+
+    &__flex {
+
+        @include respond-to("small") {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       column-gap: 20px;
+       row-gap: 40px;
+    }
+}
+}

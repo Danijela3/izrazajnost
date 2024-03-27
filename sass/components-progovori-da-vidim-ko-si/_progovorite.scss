@@ -1,0 +1,50 @@
+.progovorite {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    h3 {
+        text-transform: uppercase;
+        margin-bottom: 30px;
+       
+    }
+
+    p {
+        color: $text-light;
+    }
+
+    .button__primary {
+        margin-left: 0;
+    }
+
+    &__buttons {
+        display: flex;
+        // flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+        justify-content: start;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        a {
+            text-transform: uppercase;
+        }
+    }
+
+    &__slobodan {
+        margin-bottom: 20px;
+    }
+
+    &__flex {
+        @include respond-to("medium") {
+            display: flex;
+           
+            gap: 55px;
+        }
+    }
+
+    &__paragraph {
+        max-width: 579px;
+    }
+
+
+}

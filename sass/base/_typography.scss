@@ -89,4 +89,20 @@ a {
 img {
     max-width: 100%;
     height: auto;
+  
+}
+
+.blog-title-2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-top: 10px;
+    @include respond-to("small") {
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 44px;
+    
+    margin-top: 18px;
+    }
+     
+   
 }

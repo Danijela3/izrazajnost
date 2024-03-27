@@ -1,20 +1,9 @@
-.header {
-
-    width: 100%;
-    display: flex;
-    position: relative;
-    background-image: url(images/watermark-header.svg);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: contain;
-
-    @include respond-to("small") {
-        background-image: none;
-    }
-
-    .container {
-        background-position: left;
-        background-repeat: no-repeat;
+.header-transparent {
+    &__mobile-logo {
+        display: block;
+        padding-top: 20px;
+        z-index: 1000;
+        
     }
 
     &__row {
@@ -24,19 +13,20 @@
 
         @include respond-to("medium") {
             flex-direction: row;
+            justify-content: space-between;
         }
 
         @include respond-to("large") {
             
-            justify-content: space-between;
+            
         }
     }
 
     &__left {
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
-        padding-top: 20px;
+        align-items: center;
+        padding-top: 0;
         padding-bottom: 5px;
 
 
@@ -145,7 +135,7 @@
                 top: 60%;
 
                 path {
-                    fill: $background-dark !important;
+                    fill: white;
                 }
 
                 @include respond-to("medium") {
@@ -188,7 +178,7 @@
         width: 20px;
         height: 2px;
         margin: 5px auto;
-        background-color: $background-dark;
+        background-color: white;
         border-radius: 2px;
     }
 
@@ -210,6 +200,7 @@
         width: 100%;
         opacity: 0;
         height: 100vh;
+        background: transparent;
 
         @include respond-to("medium") {
             position: static;
@@ -218,7 +209,7 @@
 
 
         a {
-            color: $background-dark;
+            color: white;
 
 
             &:last-of-type {
@@ -374,10 +365,7 @@
             padding-top: 20px;
         }
 
-        @include respond-to ("large") {
-            display: none;
-          
-        }
+       
     }
 
     .paragraph-big {
@@ -400,9 +388,5 @@
             font-size: 19px;
         }
     }
-
-
-   
-
 
 }

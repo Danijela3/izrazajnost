@@ -1,0 +1,42 @@
+.znacaj-knjige {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    h2 {
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        text-align: center;
+       
+    }
+
+    p {
+        color: $text-light;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+
+    &__objasnjenje {
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        
+
+        @include respond-to("medium") {
+            display: flex;
+        flex-direction: row;
+        gap: 30px;
+        }
+    }
+
+    &__explanation {
+
+        @include respond-to("medium") {
+        max-width: 500px;
+        }
+    }
+}

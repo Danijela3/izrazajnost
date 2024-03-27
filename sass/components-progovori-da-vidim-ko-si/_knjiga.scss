@@ -1,0 +1,72 @@
+.knjiga {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    h1 {
+        text-transform: uppercase;
+        margin-bottom: 30px;
+
+        @include respond-to("small") {
+            text-align: center;
+        }
+
+    }
+
+
+
+    p {
+        color: $text-light;
+    }
+
+    ul {
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: stretch;
+        justify-content: start;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        @include respond-to("small") {
+            align-items: stretch;
+
+        }
+    }
+
+    &__buttons a {
+        text-transform: uppercase;
+    }
+
+    .button__primary {
+        margin-left: 0;
+
+
+    }
+
+    &__flex {
+        @include respond-to("small") {
+            display: flex;
+            justify-content: space-around;
+
+
+
+        }
+
+
+
+
+    }
+
+    &__flex-right {
+        max-width: 390px;
+    }
+
+
+
+
+}

@@ -1,0 +1,57 @@
+.osnivaci-main {
+    padding-top: 40px;
+
+    h2 {
+        color: white;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+
+    }
+
+    h4 {
+        margin-bottom: 0;
+        color: white;
+        text-transform: uppercase;
+        margin-top: 10px;
+    }
+
+    h5 {
+        color: white;
+        text-transform: uppercase;
+        // margin-top: 10px;
+        margin-bottom: 20px;
+
+    }
+
+    &__main-founders {
+        margin-bottom: 20px;
+
+    }
+
+    &__beginnings {
+        padding-top: 20px;
+
+
+    }
+
+    p {
+        padding-bottom: 20px;
+    }
+
+    img {
+        border-radius: 8px;
+    }
+
+    &__photos {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        // gap: 20px;
+    }
+
+    &__main-flex {
+        display: flex;
+        gap: 20px;
+    }
+
+}
