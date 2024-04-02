@@ -15,7 +15,6 @@ body {
 
 p {
     margin: 0 0 12px 0;
-
     &:last-of-type {
         margin: 0;
     }
@@ -33,7 +32,8 @@ h6 {
     margin: 0 0 12px 0;
 }
 
-h1 {
+h1,
+.h1 {
     @include fluid-type(320px, 1440px, 30px, 70px);
     @include line-height(320px, 1440px, 36px, 76px);
 }
@@ -72,7 +72,6 @@ h6,
     @include line-height(320px, 1440px, 22px, 23px);
 }
 
-
 .paragraph-big {
     @include fluid-type(320px, 1440px, 18px, 20px);
     @include line-height(320px, 1440px, 24px, 26px);
@@ -82,7 +81,6 @@ h6,
     @include fluid-type(320px, 1440px, 14px, 15px);
     @include line-height(320px, 1440px, 18px, 19px);
 }
-
 
 a {
     transition: all 0.25s ease-in-out;
@@ -94,8 +92,6 @@ a {
         color: $text-light;
     }
 }
-
-
 
 img {
     max-width: 100%;

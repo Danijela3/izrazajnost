@@ -388,29 +388,35 @@ h6 {
   margin: 0 0 12px 0;
 }
 
-h1 {
+h1,
+.h1 {
   font-size: 30px;
 }
 @media screen and (min-width: 320px) {
-  h1 {
+  h1,
+  .h1 {
     font-size: calc(30px + 40 * (100vw - 320px) / 1120);
   }
 }
 @media screen and (min-width: 1440px) {
-  h1 {
+  h1,
+  .h1 {
     font-size: 70px;
   }
 }
-h1 {
+h1,
+.h1 {
   line-height: 36px;
 }
 @media screen and (min-width: 320px) {
-  h1 {
+  h1,
+  .h1 {
     line-height: calc(36px + 40 * (100vw - 320px) / 1120);
   }
 }
 @media screen and (min-width: 1440px) {
-  h1 {
+  h1,
+  .h1 {
     line-height: 76px;
   }
 }
@@ -864,8 +870,164 @@ html {
 }
 
 .aktivnosti-udruzenja__header {
-  background: url("your-image.jpg") no-repeat center/cover;
-  min-height: 370px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-height: 300px;
+  padding: 20px 0;
+  display: flex;
+}
+@media (min-width: 768px) {
+  .aktivnosti-udruzenja__header {
+    padding: 30px 0;
+  }
+}
+@media (min-width: 1200px) {
+  .aktivnosti-udruzenja__header {
+    min-height: 700px;
+    padding: 30px 0 100px 0;
+  }
+}
+.aktivnosti-udruzenja__header .container {
+  width: 100%;
+  margin-top: auto;
+}
+.aktivnosti-udruzenja__header h2 {
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+}
+.aktivnosti-udruzenja__row {
+  padding: 40px 0 30px 0;
+}
+@media (min-width: 768px) {
+  .aktivnosti-udruzenja__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .aktivnosti-udruzenja__row {
+    padding: 100px 0 70px 0;
+    -moz-column-gap: 34px;
+         column-gap: 34px;
+  }
+}
+.aktivnosti-udruzenja__card {
+  margin-bottom: 35px;
+}
+.aktivnosti-udruzenja__card:last-of-type {
+  margin-bottom: 0;
+}
+@media (min-width: 992px) {
+  .aktivnosti-udruzenja__card {
+    margin-bottom: 0;
+  }
+}
+.aktivnosti-udruzenja__card > span {
+  display: block;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .aktivnosti-udruzenja__card > span {
+    margin-bottom: 18px;
+  }
+}
+.aktivnosti-udruzenja__card > strong {
+  display: block;
+  font-weight: 500;
+  color: #219DD9;
+  font-size: 64px;
+  line-height: 1;
+  margin-bottom: 12px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .aktivnosti-udruzenja__card > strong {
+    font-size: 100px;
+    margin-bottom: 18px;
+  }
+}
+.aktivnosti-udruzenja__card > em {
+  display: block;
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+.aktivnosti-udruzenja__card > h3 {
+  margin: 25px 0 10px 0;
+  text-transform: uppercase;
+}
+@media (min-width: 992px) {
+  .aktivnosti-udruzenja__card > h3 {
+    margin: 70px 0 14px 0;
+  }
+}
+.aktivnosti-udruzenja .map-wrap {
+  overflow-x: auto;
+  border-radius: 8px;
+}
+.aktivnosti-udruzenja #map {
+  width: 700px;
+  height: 600px;
+  border-radius: 8px;
+}
+@media (min-width: 768px) {
+  .aktivnosti-udruzenja #map {
+    height: 650px;
+    width: 100%;
+  }
+}
+.aktivnosti-udruzenja #map .gmnoprint a,
+.aktivnosti-udruzenja #map .gmnoprint span,
+.aktivnosti-udruzenja #map .gm-style-cc {
+  display: none;
+}
+.aktivnosti-udruzenja #map .gmnoprint div {
+  background: none !important;
+}
+.aktivnosti-udruzenja #map a[title*="Open this area in Google Mapa"], .aktivnosti-udruzenja #map a[href^="https://maps.google.com/maps"] {
+  display: none !important;
+}
+.aktivnosti-udruzenja #map div {
+  border: none !important;
+}
+.aktivnosti-udruzenja #map div:focus, .aktivnosti-udruzenja #map div:focus-visible {
+  outline: none;
+  border: none !important;
+}
+.aktivnosti-udruzenja #map div:focus div, .aktivnosti-udruzenja #map div:focus-visible div {
+  border: none !important;
+  outline: none;
+}
+.aktivnosti-udruzenja .custom-marker {
+  background-color: #ffffff;
+  border-radius: 3px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1019607843);
+  padding: 6px 6px 6px 24px;
+  text-align: center;
+  color: #616161;
+  font-size: 15px;
+  line-height: 1;
+  display: inline-block;
+  position: relative;
+}
+.aktivnosti-udruzenja .custom-marker::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  width: 15px;
+  height: 15px;
+  background-image: url(images/location.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .edukacije {
