@@ -6,12 +6,10 @@
     object-fit: cover;
     min-height: 370px;
     padding-top: 45px;
-    
 
     @include respond-to("small") {
         min-height: 500px;
         padding-top: 85px;
-       
     }
 
     @include respond-to("medium") {
@@ -20,12 +18,8 @@
     }
 
     &__field {
-        // max-width: 499px;
         margin-left: auto;
-
-        @include respond-to("small") {
-            max-width: 370px;
-        }
+        max-width: 370px;
 
         @include respond-to("medium") {
             max-width: 499px;

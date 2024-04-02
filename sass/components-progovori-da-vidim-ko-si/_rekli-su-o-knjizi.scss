@@ -1,11 +1,9 @@
 .rekli-su {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px 0;
 
     h2 {
         text-transform: uppercase;
         margin-bottom: 30px;
-       
     }
 
     p {
@@ -18,16 +16,17 @@
     }
 
     blockquote {
-        margin-left: 0;
-        margin-right: 0;
+        margin: 0;
     }
 
     &__flex {
         @include respond-to("medium") {
-        display: flex;
-        gap: 20px;
+            display: flex;
+            gap: 20px;
         }
     }
 
-  
+    &__flex-blockquote {
+        width: 50%;
+    }
 }

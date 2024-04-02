@@ -1,5 +1,4 @@
 .udruzenje-ciljevi {
-
     display: block;
 
     &__header {
@@ -15,37 +14,29 @@
     }
 
     @include respond-to("small") {
-
         &__hero-header {
             display: flex;
             justify-content: space-between;
-            // grid-template-columns: 1fr 1fr;
             margin-top: 118px;
             gap: 66px;
+        }
+
+        &__grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 100px;
+            margin-bottom: 112px;
         }
     }
 
     &__hero-header h1 {
         margin-top: 20px;
-        // font-size: 56px;
-        // line-height: 60px;
         text-transform: uppercase;
 
         @include respond-to("small") {
             margin-top: 0;
-        }
-    }
-
-    @include respond-to("small") {
-
-        &__grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            column-gap: 30px;
-            row-gap: 20px;
-            margin-top: 100px;
-            margin-bottom: 112px;
         }
     }
 
@@ -59,7 +50,6 @@
         p {
             font-size: 15px;
             margin-bottom: 19px;
-
         }
     }
 }

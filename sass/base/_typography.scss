@@ -4,23 +4,29 @@ body {
     font-weight: 400;
     overflow-x: hidden;
     @include fluid-type(320px, 1440px, 16px, 17px);
-    @include line-height(320px, 1440px, 22px, 23px); 
+    @include line-height(320px, 1440px, 22px, 23px);
 }
 
 // html {
-  
+
 //     overflow-x: hidden;
-    
+
 // }
 
 p {
     margin: 0 0 12px 0;
-    &:last-of-type{
-        margin:0;
+
+    &:last-of-type {
+        margin: 0;
     }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: $font;
     color: $title-color;
     font-weight: 500;
@@ -29,45 +35,50 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     @include fluid-type(320px, 1440px, 30px, 70px);
-    @include line-height(320px, 1440px, 36px, 76px); 
+    @include line-height(320px, 1440px, 36px, 76px);
 }
 
 
 
-h2, .h2 {
+h2,
+.h2 {
     @include fluid-type(320px, 1440px, 24px, 56px);
     @include line-height(320px, 1440px, 28px, 60px);
 }
 
-h3, .h3 {
+h3,
+.h3 {
     @include fluid-type(320px, 1440px, 22px, 36px);
     @include line-height(320px, 1440px, 28px, 42px);
 }
 
 
 
-h4, .h4 {
+h4,
+.h4 {
     @include fluid-type(320px, 1440px, 18px, 22px);
     @include line-height(320px, 1440px, 21px, 26px);
 }
 
-h5, .h5 {
+h5,
+.h5 {
     @include fluid-type(320px, 1440px, 16px, 17px);
-    @include line-height(320px, 1440px, 22px, 23px); 
+    @include line-height(320px, 1440px, 22px, 23px);
 }
 
-h6, .h6 {
+h6,
+.h6 {
     @include fluid-type(320px, 1440px, 16px, 17px);
-    @include line-height(320px, 1440px, 22px, 23px); 
+    @include line-height(320px, 1440px, 22px, 23px);
 }
 
 
-.paragraph-big{
+.paragraph-big {
     @include fluid-type(320px, 1440px, 18px, 20px);
     @include line-height(320px, 1440px, 24px, 26px);
 }
 
-.paragraph-small{
+.paragraph-small {
     @include fluid-type(320px, 1440px, 14px, 15px);
     @include line-height(320px, 1440px, 18px, 19px);
 }
@@ -76,11 +87,11 @@ h6, .h6 {
 a {
     transition: all 0.25s ease-in-out;
     text-decoration: none;
-  
+
 
 
     @include respond-to("small") {
-    color: $text-light;
+        color: $text-light;
     }
 }
 
@@ -89,20 +100,42 @@ a {
 img {
     max-width: 100%;
     height: auto;
-  
+    // aspect-ratio: 16 / 9;
+    // width: 100%;
+
 }
 
 .blog-title-2 {
     text-transform: uppercase;
     font-size: 30px;
     margin-top: 10px;
+
     @include respond-to("small") {
-    font-weight: 500;
-    font-size: 42px;
-    line-height: 44px;
-    
-    margin-top: 18px;
+        font-weight: 500;
+        font-size: 42px;
+        line-height: 44px;
+        margin-top: 18px;
     }
-     
-   
+
+
+}
+
+.blog-title {
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 54px;
+    color: #1D4951;
+    text-transform: uppercase;
+    max-width: 516px;
+}
+
+.text-bold-heading {
+    font-weight: 600;
+    color: $background-dark;
+
+}
+
+.text-bold-paragraph {
+    font-weight: 600;
+    color: $background-dark;
 }

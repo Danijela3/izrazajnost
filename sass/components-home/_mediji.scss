@@ -1,22 +1,19 @@
 .mediji {
-
     padding-bottom: 40px;
 
     @include respond-to("small") {
         padding-bottom: 110px;
     }
 
-    @include respond-to ("medium") {
+    @include respond-to("medium") {
         padding-bottom: 139px;
     }
 
     &__header {
-
         display: flex;
         flex-direction: column;
         gap: 20px;
         padding-top: 40px;
-
         margin-bottom: 20px;
         border-top: 1px solid $border-color;
 
@@ -26,22 +23,17 @@
         }
 
         @include respond-to("small") {
-
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
             padding-bottom: 69px;
-
-
         }
     }
 
     &__grid {
-
         display: block;
 
         img {
-
             margin-bottom: 20px;
 
             @include respond-to("small") {
@@ -56,7 +48,7 @@
             width: 100%;
             grid-template-rows: 1fr;
 
-            .mediji__grid-cards:nth-child(1) {
+            &-cards:nth-child(1) {
                 grid-column: 1;
                 grid-row: 1 / span 2;
                 height: 100%;
@@ -67,8 +59,6 @@
                     height: 100%;
                 }
             }
-
-
         }
     }
 
@@ -90,22 +80,15 @@
     &__grid-cards {
         position: relative;
 
-
         svg {
-
-
             position: absolute;
             top: 50%;
             left: 50%;
             margin: -25px 0 0 -25px;
         }
 
-
         img {
             height: 100%;
         }
-
-
-      
-}
+    }
 }

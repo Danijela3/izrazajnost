@@ -1,11 +1,9 @@
 .progovorite {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px 0;
 
     h3 {
         text-transform: uppercase;
         margin-bottom: 30px;
-       
     }
 
     p {
@@ -18,12 +16,10 @@
 
     &__buttons {
         display: flex;
-        // flex-direction: column;
         gap: 10px;
         align-items: flex-start;
         justify-content: start;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin: 20px 0;
 
         a {
             text-transform: uppercase;
@@ -37,14 +33,22 @@
     &__flex {
         @include respond-to("medium") {
             display: flex;
-           
             gap: 55px;
         }
     }
 
     &__paragraph {
-        max-width: 579px;
+        width: 100%;
+        @include respond-to("medium") {
+       width: 50%;
+        }
+       
     }
 
-
+    &__progovori-da-svi-cuju {
+        width: 100%;
+        @include respond-to("medium") {
+            width: 50%;
+             }
+    }
 }

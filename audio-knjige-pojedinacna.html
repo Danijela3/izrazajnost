@@ -9,48 +9,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 </head>
 
 
 <body>
-    <header class="header">
+    <header class="header-sticky-white">
         <div class="container">
-            <div class="header__row">
-
-
-                <!--HEADER LEFT SIDE-->
-
-                <div class="header__left">
-                    <svg width="332" height="272" viewBox="0 0 332 272" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0.515137L42.5748 271.986H51.3045L104.653 111.608L51.3392 0.515137H0Z"
-                            fill="#219DD9" />
-                        <path d="M331.493 0.515137L288.606 271.986H279.946L226.32 111.608L279.911 0.515137H331.493Z"
-                            fill="#219DD9" />
-                        <path d="M94.457 0.515137H144.237V110.236L94.457 0.515137Z" fill="#219DD9" />
-                        <path d="M235.95 0H186.17V109.721L235.95 0Z" fill="#219DD9" />
-                        <path d="M95.8955 272L134.071 151.303L144.429 172.48V272H95.8955Z" fill="#219DD9" />
-                        <path d="M234.461 272L196.251 151.303L185.928 172.48V272H234.461Z" fill="#219DD9" />
-                    </svg>
-
-                    <div class="header__mobile-logo">
+            <div class="header-sticky-white__row">
+                <div class="header-sticky-white__left">
+                    <div class="header-sticky-white__mobile-logo">
                         <img src="images/logo-mobile.svg">
                     </div>
 
+                    <div class="header-sticky-white__mobile">
 
-                    <!--MOBILE HEADER-->
+                        <div class="header-sticky-white__mobile-navigation" id="mobile-navigation">
 
-                    <div class="header__mobile">
-
-                        <div class="header__mobile-navigation" id="mobile-navigation">
-
-                            <div class="header__hamburger-button" id="hamburger-button">
-                                <div class="header__span">
+                            <div class="header-sticky-white__hamburger-button" id="hamburger-button">
+                                <div class="header-sticky-white__span">
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                 </div>
                             </div>
-                            <div class="header__close-button" id="close-button">
+                            <div class="header-sticky-white__close-button" id="close-button">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -63,73 +52,57 @@
 
 
                     </div>
-
-
                 </div>
 
 
-                <!--HEADER RIGHT SIDE-->
 
-                <div class="header__right">
-
-                    <div class="header__navigation" id="navigation">
+                <div class="header-sticky-white__header-right">
+                    <div class="header-sticky-white__navigation" id="navigation">
 
                         <nav>
                             <ul>
-                                <li class="header__border-mobile"><a href="#o-nama" class="header__links">O nama</a>
+                                <li class="header-sticky-white__border-mobile"><a href="#o-nama" class="header__links">O
+                                        nama</a>
                                 </li>
-                                <li class="header__border-mobile has-submenu"><a href="#aktivnosti"
-                                        class="header__links">Aktivnosti
+                                <li class="header-sticky-white__border-mobile has-submenu"><a href="#aktivnosti"
+                                        class="header-sticky-white__links">Aktivnosti
                                         udruženja<svg width="13" height="7" viewBox="0 0 13 7" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
                                                 d="M7.03033 6.53033C6.73744 6.82322 6.26256 6.82322 5.96967 6.53033L0.96967 1.53033C0.676777 1.23744 0.676777 0.762563 0.96967 0.46967C1.26256 0.176777 1.73744 0.176777 2.03033 0.46967L6.5 4.93934L10.9697 0.46967C11.2626 0.176777 11.7374 0.176777 12.0303 0.46967C12.3232 0.762563 12.3232 1.23744 12.0303 1.53033L7.03033 6.53033Z"
                                                 fill="#616161" />
                                         </svg></a>
-                                    <ul class="header__aktivnosti-dropdown">
-                                        <li class="header__dropdown-items">Edukacija dece i mladih</li>
-                                        <li class="header__dropdown-items">Edukacija prosvetnih radnika</li>
-                                        <li class="header__dropdown-items">Karavan kulture govora</li>
-                                        <li class="header__dropdown-items">Audio knjige</li>
-                                        <li class="header__dropdown-items">Edukativna predstava u tri čina “Izrazi se”
+                                    <ul class="header-transparent__aktivnosti-dropdown">
+                                        <li class="header-sticky-white__dropdown-items">Edukacija dece i mladih</li>
+                                        <li class="header-sticky-white__dropdown-items">Edukacija prosvetnih radnika
+                                        </li>
+                                        <li class="header-sticky-white__dropdown-items">Karavan kulture govora</li>
+                                        <li class="header-sticky-white__dropdown-items">Audio knjige</li>
+                                        <li class="header-sticky-white__dropdown-items">Edukativna predstava u tri čina
+                                            “Izrazi se”
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="header__border-mobile"><a href="#knjiga" class="header__links">Knjiga -
+                                <li class="header-sticky-white__border-mobile"><a href="#knjiga"
+                                        class="header-transparent__links">Knjiga -
                                         Progovori da vidim ko si</a></li>
-                                <li class="header__border-mobile"><a href="#blog" class="header__links">Blog</a></li>
+                                <li class="header-sticky-white__border-mobile"><a href="#blog"
+                                        class="header-transparent__links">Blog</a></li>
                                 <li><a href="#lat" class="header__links">Lat<svg width="13" height="7"
                                             viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
                                                 d="M7.03033 6.53033C6.73744 6.82322 6.26256 6.82322 5.96967 6.53033L0.96967 1.53033C0.676777 1.23744 0.676777 0.762563 0.96967 0.46967C1.26256 0.176777 1.73744 0.176777 2.03033 0.46967L6.5 4.93934L10.9697 0.46967C11.2626 0.176777 11.7374 0.176777 12.0303 0.46967C12.3232 0.762563 12.3232 1.23744 12.0303 1.53033L7.03033 6.53033Z"
                                                 fill="#616161" />
                                         </svg></span></a></li>
-                                <div class="header__contact-button">
+                                <div class="header-sticky-white__contact-button">
                                     <li><a href="#kontakt" class="button button__primary">Kontakt</a></li>
                                 </div>
                             </ul>
                         </nav>
 
                     </div>
-
-
-                    <p class="paragraph-big">Izražajnost je udruženje za razvoj i unapređivanje javnog govora. Zadatak
-                        naših članova i saradnika
-                        je da
-                        podstaknu što više ljudi da rade na polju dikcije, verbalne i neverbalne komunikacije, javnog
-                        nastupa i
-                        prezentacionih i komunikacionih veština.</p>
-
-
-
-
-
-
                 </div>
-
             </div>
-
-
         </div>
     </header>
 
@@ -140,33 +113,89 @@
 
                 <div class="audio-pojedinacna__flex">
                     <div><img src="images-audio-pojedinacna/audiobiografija1.jpg"></div>
-                    <div>
-                        <p>Audiobiografija Branislava Nušića predstavlja jedinstveni audio zapis o životu i delu jednog
+                    <div class="audio-pojedinacna__description">
+                        <p class="text-bold-paragraph">Audiobiografija Branislava Nušića predstavlja jedinstveni audio
+                            zapis o životu i delu jednog
                             od najznačajnijih naših komediografa koji je mnogo pažnje polagao razvoju kulture govora.
                             Audiobiografiju čine delovi iz Nušićeve “Autobiografije” i crtice iz njegovog života.</p>
 
-                            <p>Realizacija: Udruženje “Izražajnost”</p>
+                        <p>Realizacija: Udruženje “Izražajnost”</p>
 
-                               <p> Partner: “Nušić” fondacija</p>
-                                
-                              <p>  Uloge tumače: Dragan Vujić Vujke, Dušica Novaković, Slobodan Roksandić, Milan Bosiljčić, Marko Milovanović, Ivana Legenda Pajić, Sava Sekulić, Vesna Radulović, Dunja Roksandić, Nikola Cvetanović, Bogdan Živanović i Aljoša Petraš.Dizajner zvuka: Miloš Mijailović</p>
-                                
-                              <p>   Reditelj: Marko Đurić</p>
-                                
-                              <p>  Javna projekcija “Audiobiografije Branislava Nušića” održana je u prostorijama Saveza slepih Srbije, čiji članovi su i učestvovali u snimanju.</p>
-                                
-                              <p>  Tekstove čitaju istaknuti profesionalci – glumci zavidne dikcije, te na taj način dodatno promovišemo lepotu kazane reči.</p>
-                                
-                                
-                                
+                        <p> Partner: “Nušić” fondacija</p>
+
+                        <p> Uloge tumače: Dragan Vujić Vujke, Dušica Novaković, Slobodan Roksandić, Milan Bosiljčić,
+                            Marko Milovanović, Ivana Legenda Pajić, Sava Sekulić, Vesna Radulović, Dunja Roksandić,
+                            Nikola Cvetanović, Bogdan Živanović i Aljoša Petraš.Dizajner zvuka: Miloš Mijailović</p>
+
+                        <p> Reditelj: Marko Đurić</p>
+
+                        <p> Javna projekcija “Audiobiografije Branislava Nušića” održana je u prostorijama Saveza slepih
+                            Srbije, čiji članovi su i učestvovali u snimanju.</p>
+
+                        <p> Tekstove čitaju istaknuti profesionalci – glumci zavidne dikcije, te na taj način dodatno
+                            promovišemo lepotu kazane reči.</p>
+
+
+
                     </div>
                 </div>
             </div>
 
-            <div class="audio-pojedinacna__cards">
-                <img src="images-audio-pojedinacna/audiobiografija3.svg">
-                <img src="images-audio-pojedinacna/audiobiografija2.jpg">
-                <img src="images-audio-pojedinacna/audiobiografija4.svg">
+            <div class="slider">
+                <div class="img">
+                    <img src="images-audio-pojedinacna/audiobiografija3.jpg">
+                </div>
+                <div class="img">
+                    <img src="images-audio-pojedinacna/audiobiografija2.jpg">
+                </div>
+                <div class="img">
+                    <img src="images-audio-pojedinacna/audiobiografija4.jpg">
+                </div>
+                <div class="img">
+                    <img src="images-audio-pojedinacna/audiobiografija3.jpg">
+                </div>
+                <div class="img">
+                    <img src="images-audio-pojedinacna/audiobiografija2.jpg">
+                </div>
+                <div class="img">
+                    <img src="images-audio-pojedinacna/audiobiografija4.jpg">
+                </div>
+                <div class="img">
+                    <img src="images-audio-pojedinacna/audiobiografija3.jpg">
+                </div>
+                <div class="img">
+                    <img src="images-audio-pojedinacna/audiobiografija2.jpg">
+                </div>
+                <div class="img">
+                    <img src="images-audio-pojedinacna/audiobiografija4.jpg">
+                </div>
+                <div class="img">
+                    <img src="images-audio-pojedinacna/audiobiografija3.jpg">
+                </div>
+                <div class="img">
+                    <img src="images-audio-pojedinacna/audiobiografija2.jpg">
+                </div>
+                <div class="img">
+                    <img src="images-audio-pojedinacna/audiobiografija4.jpg">
+                </div>
+                <div class="img">
+                    <img src="images-audio-pojedinacna/audiobiografija3.jpg">
+                </div>
+                <div class="img">
+                    <img src="images-audio-pojedinacna/audiobiografija2.jpg">
+                </div>
+                <div class="img">
+                    <img src="images-audio-pojedinacna/audiobiografija4.jpg">
+                </div>
+                <div class="img">
+                    <img src="images-audio-pojedinacna/audiobiografija3.jpg">
+                </div>
+                <div class="img">
+                    <img src="images-audio-pojedinacna/audiobiografija2.jpg">
+                </div>
+                <div class="img">
+                    <img src="images-audio-pojedinacna/audiobiografija4.jpg">
+                </div>
             </div>
         </section>
     </main>
@@ -236,7 +265,17 @@
     </footer>
 
 
-
+    <script>
+        $('.slider').slick({
+            infinite: true,
+            autoplay: true,         //autoplay
+            autoplaySpeed: 0,       //autoplay speed
+            speed: 8200,            //added（slide speed
+            slidesToShow: 1, // Set to 1 to show only one slide at a time
+      slidesToScroll: 1,       //added (number of slide displayed
+            cssEase: "linear"
+        })
+    </script>
 </body>
 
 

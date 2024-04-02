@@ -1,9 +1,4 @@
-.aktivnosti-udruzenja {
-    &__header {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        object-fit: cover;
-        min-height: 370px;
-    }
+.aktivnosti-udruzenja__header {
+    background: url('your-image.jpg') no-repeat center/cover;
+    min-height: 370px;
 }

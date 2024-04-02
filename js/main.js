@@ -125,3 +125,7 @@ modals.forEach(modal => {
 //     modal.style.display = "none";
 //   }
 // }
+
+
+// slider
+

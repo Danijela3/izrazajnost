@@ -1,6 +1,5 @@
 .knjiga {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px 0;
 
     h1 {
         text-transform: uppercase;
@@ -8,11 +7,9 @@
 
         @include respond-to("small") {
             text-align: center;
+            max-width: 1152px;
         }
-
     }
-
-
 
     p {
         color: $text-light;
@@ -25,16 +22,14 @@
 
     &__buttons {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 10px;
         align-items: stretch;
         justify-content: start;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin: 20px 0;
 
         @include respond-to("small") {
-            align-items: stretch;
-
+            // align-items: stretch;
         }
     }
 
@@ -44,29 +39,16 @@
 
     .button__primary {
         margin-left: 0;
-
-
     }
 
     &__flex {
         @include respond-to("small") {
             display: flex;
             justify-content: space-around;
-
-
-
         }
-
-
-
-
     }
 
     &__flex-right {
-        max-width: 390px;
+        max-width: 557px;
     }
-
-
-
-
 }
