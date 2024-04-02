@@ -32,7 +32,7 @@
                     </div>
 
 
-                   <div class="header__mobile">
+                    <div class="header__mobile">
 
                         <div class="header__mobile-navigation" id="mobile-navigation">
 
@@ -49,7 +49,7 @@
                                     <path
                                         d="M18.804 16.9465C19.0506 17.193 19.1891 17.5275 19.1891 17.8762C19.1891 18.2249 19.0506 18.5593 18.804 18.8059C18.5575 19.0524 18.223 19.1909 17.8743 19.1909C17.5256 19.1909 17.1912 19.0524 16.9447 18.8059L10.0004 11.8594L3.05403 18.8037C2.80747 19.0502 2.47305 19.1888 2.12435 19.1888C1.77565 19.1888 1.44123 19.0502 1.19466 18.8037C0.948091 18.5571 0.80957 18.2227 0.80957 17.874C0.80957 17.5253 0.948091 17.1909 1.19466 16.9443L8.14107 10.0001L1.19685 3.05366C0.950278 2.80709 0.811758 2.47268 0.811758 2.12398C0.811758 1.77528 0.950278 1.44086 1.19685 1.19429C1.44342 0.94772 1.77783 0.809199 2.12653 0.809199C2.47523 0.809199 2.80965 0.94772 3.05622 1.19429L10.0004 8.1407L16.9468 1.19319C17.1934 0.946626 17.5278 0.808105 17.8765 0.808105C18.2252 0.808105 18.5597 0.946626 18.8062 1.19319C19.0528 1.43976 19.1913 1.77418 19.1913 2.12288C19.1913 2.47158 19.0528 2.806 18.8062 3.05257L11.8598 10.0001L18.804 16.9465Z"
                                         fill="#1D4951" />
-                                 </svg>
+                                </svg>
                             </div>
                         </div>
 
@@ -210,16 +210,52 @@
             </div>
         </section>
 
+
         <!--AKTIVNOSTI UDRUZENJA--------------------------------------------------------------------------------->
-
-        <!--ovaj deo ce jovana :) -->
-
         <section class="aktivnosti-udruzenja">
-            <div class="aktivnosti-udruzenja__header" style="background-image: url(images/ucionica.png);"></div>
+            <div class="aktivnosti-udruzenja__header" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.4) 100%), url(images/ucionica.png);">
+                <div class="container">
+                    <h2 class="h1">Aktivnosti Udruženja </h2>
+                </div>
+            </div>
             <div class="container">
-                <!-- <h2>Aktivnosti Udruženja </h2> -->
+                <div class="aktivnosti-udruzenja__row">
+                    <div class="aktivnosti-udruzenja__card">
+                        <span class="paragraph-small">vise od</span>
+                        <strong>50</strong>
+                        <em class="paragraph-small">gradova</em>
+                        <h3 class="h4">Karavan kulture govora</h3>
+                        <p>U svakom gradu naš tim predavača održava radionice sa decom i mladima, seminar za prosvetne
+                            radnike i tribina za opštu javnost.</p>
+                    </div>
+
+                    <div class="aktivnosti-udruzenja__card">
+                        <span class="paragraph-small">vise od</span>
+                        <strong>3000</strong>
+                        <em class="paragraph-small">gradova</em>
+                        <h3 class="h4">Podučavanje prosvetnih radnika</h3>
+                        <p>U svakom gradu naš tim predavača održava radionice sa decom i mladima, seminar za prosvetne
+                            radnike i tribina za opštu javnost.</p>
+                    </div>
+
+                    <div class="aktivnosti-udruzenja__card">
+                        <span class="paragraph-small">vise od</span>
+                        <strong>5000</strong>
+                        <em class="paragraph-small">gradova</em>
+                        <h3 class="h4">Podučavanje dece i mladih</h3>
+                        <p>U svakom gradu naš tim predavača održava radionice sa decom i mladima, seminar za prosvetne
+                            radnike i tribina za opštu javnost.</p>
+                    </div>
+
+                </div>
+
+                <div class="map-wrap">  
+                   <div id="map"></div>
+                </div>
+        
             </div>
         </section>
+
 
 
         <!-----EDUKACIJE---------------------------------------------------------------------------------------------------->
@@ -401,14 +437,15 @@
 
 
                     <div class="mediji__grid-cards">
-                        <svg class="play-btn" data-modal="modal1" width="45" height="47" viewBox="0 0 45 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="play-btn" data-modal="modal1" width="45" height="47" viewBox="0 0 45 47" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M42.6295 19.9265L7.27232 1.22998C4.39955 -0.288378 0 1.18506 0 4.94053V42.3245C0 45.6936 4.08817 47.7241 7.27232 46.0351L42.6295 27.3476C45.7835 25.6854 45.7935 21.5886 42.6295 19.9265Z"
                                 fill="white" />
                         </svg>
                         <img src="images/milan-o-kulturi.png">
                         <div id="modal1" class="modal">
-                            
+
                             <div class="modal-content">
                                 <span class="close">&times;</span>
                                 <iframe id="videoIframe" width="944" height="533"
@@ -422,7 +459,8 @@
 
 
                     <div class="mediji__grid-cards">
-                        <svg class="play-btn" data-modal="modal2" width="45" height="47" viewBox="0 0 45 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="play-btn" data-modal="modal2" width="45" height="47" viewBox="0 0 45 47" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M42.6295 19.9265L7.27232 1.22998C4.39955 -0.288378 0 1.18506 0 4.94053V42.3245C0 45.6936 4.08817 47.7241 7.27232 46.0351L42.6295 27.3476C45.7835 25.6854 45.7935 21.5886 42.6295 19.9265Z"
                                 fill="white" />
@@ -443,7 +481,8 @@
 
 
                     <div class="mediji__grid-cards">
-                        <svg class="play-btn" data-modal="modal3" width="45" height="47" viewBox="0 0 45 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="play-btn" data-modal="modal3" width="45" height="47" viewBox="0 0 45 47" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M42.6295 19.9265L7.27232 1.22998C4.39955 -0.288378 0 1.18506 0 4.94053V42.3245C0 45.6936 4.08817 47.7241 7.27232 46.0351L42.6295 27.3476C45.7835 25.6854 45.7935 21.5886 42.6295 19.9265Z"
                                 fill="white" />
@@ -605,7 +644,273 @@
         </div>
         <div class="footer__izrazajnost-logo-mobile"><img src="images/logo-full.png"></div>
     </footer>
+
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUNpJKNFUudVy8WJLJbLISFx0MlBkJwxQ&callback=Function.prototype"></script>
+    <script type="text/javascript">
+
+        if (document.getElementById('map')) {
+
+            async function initializeMap() {
+
+                // Define custom map styles
+                // var styles = [
+                //     { "featureType": "water", "elementType": "geometry", "stylers": [{ "color": "#e9e9e9" }, { "lightness": 17 }] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [{ "color": "#f5f5f5" }, { "lightness": 20 }] }, { "featureType": "road.highway", "elementType": "geometry.fill", "stylers": [{ "color": "#ffffff" }, { "lightness": 17 }] }, { "featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [{ "color": "#ffffff" }, { "lightness": 29 }, { "weight": 0.2 }] }, { "featureType": "road.arterial", "elementType": "geometry", "stylers": [{ "color": "#ffffff" }, { "lightness": 18 }] }, { "featureType": "road.local", "elementType": "geometry", "stylers": [{ "color": "#ffffff" }, { "lightness": 16 }] }, { "featureType": "poi", "elementType": "geometry", "stylers": [{ "color": "#f5f5f5" }, { "lightness": 21 }] }, { "featureType": "poi.park", "elementType": "geometry", "stylers": [{ "color": "#dedede" }, { "lightness": 21 }] }, { "elementType": "labels.text.stroke", "stylers": [{ "visibility": "on" }, { "color": "#ffffff" }, { "lightness": 16 }] }, { "elementType": "labels.text.fill", "stylers": [{ "saturation": 36 }, { "color": "#333333" }, { "lightness": 40 }] }, { "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "featureType": "transit", "elementType": "geometry", "stylers": [{ "color": "#f2f2f2" }, { "lightness": 19 }] }, { "featureType": "administrative", "elementType": "geometry.fill", "stylers": [{ "color": "#fefefe" }, { "lightness": 20 }] }, { "featureType": "administrative", "elementType": "geometry.stroke", "stylers": [{ "color": "#fefefe" }, { "lightness": 17 }, { "weight": 1.2 }] }
+                // ];
+
+                var styles = [
+                  {
+                    "elementType": "geometry",
+                    "stylers": [
+                      {
+                        "color": "#f5f5f5"
+                      }
+                    ]
+                  },
+                  {
+                    "elementType": "labels.icon",
+                    "stylers": [
+                      {
+                        "visibility": "off"
+                      }
+                    ]
+                  },
+                  {
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                      {
+                        "color": "#616161"
+                      }
+                    ]
+                  },
+                  {
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                      {
+                        "color": "#f5f5f5"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "administrative.land_parcel",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                      {
+                        "color": "#bdbdbd"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "poi",
+                    "elementType": "geometry",
+                    "stylers": [
+                      {
+                        "color": "#eeeeee"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "poi",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                      {
+                        "color": "#757575"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "poi.park",
+                    "elementType": "geometry",
+                    "stylers": [
+                      {
+                        "color": "#e5e5e5"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "poi.park",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                      {
+                        "color": "#9e9e9e"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "road",
+                    "elementType": "geometry",
+                    "stylers": [
+                      {
+                        "color": "#ffffff"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "road.arterial",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                      {
+                        "color": "#757575"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "road.highway",
+                    "elementType": "geometry",
+                    "stylers": [
+                      {
+                        "color": "#dadada"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "road.highway",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                      {
+                        "color": "#616161"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "road.local",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                      {
+                        "color": "#9e9e9e"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "transit.line",
+                    "elementType": "geometry",
+                    "stylers": [
+                      {
+                        "color": "#e5e5e5"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "transit.station",
+                    "elementType": "geometry",
+                    "stylers": [
+                      {
+                        "color": "#eeeeee"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": [
+                      {
+                        "color": "#c9c9c9"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "water",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                      {
+                        "color": "#9e9e9e"
+                      }
+                    ]
+                  }
+                ];
+
+                const { Map } = await google.maps.importLibrary("maps");
+                const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 7,
+                    center: new google.maps.LatLng(44.7349, 18.0843),
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    mapId: "e16c2c6778f5003",
+                    keyboardShortcuts: false,
+                    zoomControl: false,
+                    gestureHandling: "none",
+                    mapTypeControl: false,
+                    scaleControl: false,
+                    streetViewControl: false,
+                    rotateControl: false,
+                    fullscreenControl: false
+                });
+
+                // Create a styled map
+                const styledMap = new google.maps.StyledMapType(styles, { name: 'Styled Map' });
+
+                // Associate the styled map with the map
+                map.mapTypes.set('styled_map', styledMap);
+                map.setMapTypeId('styled_map');
+
+                var markers = [
+                    [44.7349, 18.0843, 'Doboj'],
+                    [46.100376, 19.667587, 'Subotica'],
+                    [44.87278, 18.80833, 'Brcko'],
+                    [44.2521, 20.0817, 'Mionica'],
+                    [44.0128, 20.9114, 'Kragujevac'],
+                    [48.2082, 16.3719, 'Bec'],
+                    [46.0569, 14.5058, 'Ljubljana'],
+                    [45.5669, 19.6497, 'Vrbas'],
+                    [43.5668, 19.5330, 'Priboj'],
+                    [45.7489, 21.2087, 'Temisvar'],
+                    [44.0699, 22.0985, 'Bor'],
+                    [44.7722, 17.1910, 'Banja Luka'],
+                    [47.4979, 19.0402, 'Budimpesta'],
+                    [43.6253, 20.8952, 'Vrnjacka Banja'],
+                    [45.8312, 20.4738, 'Kikinda'],
+                    [45.1188, 21.2950, 'Vrsac'],
+                    [44.3865, 19.1048, 'Zvornik'],
+                ]; 
+
+                var bounds = new google.maps.LatLngBounds();
+
+                for (i = 0; i < markers.length; i++) {
+
+                    var pinTag = document.createElement("div");
+
+                    pinTag.className = "custom-marker";
+                    pinTag.textContent = markers[i][2];
+
+                    var marker = new google.maps.marker.AdvancedMarkerElement({
+                        position: new google.maps.LatLng(markers[i][0], markers[i][1]),
+                        map: map,
+                        title: markers[i][2],
+                        content: pinTag
+                    });
+
+                    bounds.extend(new google.maps.LatLng(markers[i][0], markers[i][1]));
+
+                }
+
+                //center the map to the geometric center of all markers
+                // map.setCenter(bounds.getCenter());
+                  if(window.innerWidth > 767){
+
+                    map.fitBounds(bounds, {top:20,right:20,bottom:0,left:20});
+                
+                  }else{
+
+                    map.fitBounds(bounds);
+                
+                    //remove one zoom level to ensure no marker is on the edge.
+                    google.maps.event.addListenerOnce(map,'bounds_changed', function() {
+                            map.setZoom(map.getZoom() + 0.6);
+                    });
+                  }
+
+
+
+            }
+
+            initializeMap();
+
+        }
+
+    </script>
+
+
 </body>
 
 </html>
