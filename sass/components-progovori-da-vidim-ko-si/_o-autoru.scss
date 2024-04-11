@@ -1,7 +1,5 @@
 .o-autoru {
-    padding-top: 40px;
-    padding-bottom: 40px;
-
+    padding: 40px 0;
 
     h4,
     p {
@@ -10,14 +8,11 @@
 
     h4 {
         text-transform: uppercase;
-
     }
 
     p {
         color: $background-dark;
-        margin-top: 20px;
-        margin-bottom: 20px;
-
+        margin: 20px 0;
     }
 
     &__align-center {
@@ -26,11 +21,7 @@
         align-items: center;
 
         p {
-            max-width:695px ;
+            max-width: 695px;
         }
     }
-
-    
-
-
 }

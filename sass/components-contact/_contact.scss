@@ -1,0 +1,80 @@
+.kontakt {
+    padding-bottom: 50px;
+    &__flex {
+
+        @include respond-to("medium") {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 194px;
+        gap: 30px;
+        }
+    }
+
+    &__heading {
+        padding-top: 40px;
+        border-top: 1px solid rgba(64, 92, 97, 0.3);
+        margin-top: 60px;
+
+        p {
+            color: $background-dark;
+            margin-bottom: 22px;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            margin-bottom: 72px;
+        }
+    }
+
+    form {
+// max-width: 700px;
+width: 100%;
+
+
+        @include respond-to("medium") {
+        // min-width: 499px;
+        }
+    }
+
+    .form-group {
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        // &:last-of-type {
+        //     margin-bottom: 0 !important;
+        // }
+
+        label {
+            margin-bottom: 12px;
+        }
+
+        input,
+        textarea {
+            background-color: #E5EAEC;
+            border: none;
+            padding: 14px 20px 14px 20px;
+        }
+
+        textarea {
+            padding: 28px 40px 28px 40px;
+        }
+    }
+
+    .button__white-button {
+        border: 1px solid $background-dark;
+    }
+
+    &__form-photo {
+        width: 100%;
+
+        @include respond-to("medium") {
+            width: 80%;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}

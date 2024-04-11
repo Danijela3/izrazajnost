@@ -1,7 +1,6 @@
 .najnoviji-tekstovi {
     padding-bottom: 40px;
 
-
     @include respond-to("small") {
         padding-bottom: 80px;
     }
@@ -9,9 +8,6 @@
     @include respond-to("medium") {
         padding-bottom: 100px;
     }
-
-
-
 
     &__header {
         display: block;
@@ -27,14 +23,10 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-
-
-
         }
     }
 
     &__grid {
-
         h4 {
             text-transform: uppercase;
             font-weight: 600;
@@ -42,16 +34,9 @@
 
         @include respond-to("small") {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             padding-top: 57px;
             gap: 31px;
-
-
-
-
-
-
-
         }
     }
 
@@ -59,31 +44,21 @@
         margin-bottom: 40px;
         max-width: 400px;
 
-
         h5 {
             position: relative;
             color: $text-light;
             margin-bottom: 0;
-            //     display: flex;
-            // align-items: center;
-
-
-
 
             &::after {
                 content: '';
                 position: absolute;
                 bottom: 50%;
                 left: 0;
-
                 height: 1px;
                 width: 100%;
                 background: $border-color;
-
                 z-index: 1;
-                // transform: translateX(-50%);
             }
-
         }
 
         span {
@@ -93,7 +68,6 @@
             padding-right: 16px;
         }
     }
-
 
     &__image {
         margin-bottom: 10px;
@@ -105,28 +79,8 @@
             margin-bottom: 30px;
         }
 
-        &.aspect-ratio1 {
-            @include respond-to("small") {
-                aspect-ratio: 0.94;
-            }
-
-        }
-
-        &.aspect-ratio2 {
-            @include respond-to("small") {
-                aspect-ratio: 1.55;
-            }
-        }
-
-        &.aspect-ratio3 {
-            @include respond-to("small") {
-                aspect-ratio: 1.11;
-            }
-        }
+        &.aspect-ratio1 { aspect-ratio: 0.94; }
+        &.aspect-ratio2 { aspect-ratio: 1.55; }
+        &.aspect-ratio3 { aspect-ratio: 1.11; }
     }
-
-
-    // @include respond-to("small") {
-
-
 }

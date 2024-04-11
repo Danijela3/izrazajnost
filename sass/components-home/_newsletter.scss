@@ -1,7 +1,5 @@
 .newsletter {
-    background-color:rgba(101, 189, 232, 1);
-
-    
+    background-color: rgba(101, 189, 232, 1);
     background-image: url('images/watermark-newsletter-mobile.svg');
     background-repeat: no-repeat;
     background-position: left;
@@ -9,32 +7,26 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-
     @include respond-to("small") {
         padding-top: 123px;
-    padding-bottom: 143px;
-    background-image: url('images/logo-light.svg');
+        padding-bottom: 143px;
+        background-image: url('images/logo-light.svg');
     }
 
     &__flex {
         display: block;
         max-width: 380px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
 
         @include respond-to("small") {
             display: flex;
             justify-content: space-between;
-            max-width: none;
             gap: 70px;
-            
         }
 
         @include respond-to("large") {
             gap: 258px;
         }
-
-       
 
         h2 {
             margin-bottom: 86px;
@@ -52,7 +44,6 @@
         }
 
         p {
-            // max-width: 499px;
             margin-bottom: 20px;
             color: $title-color;
             font-weight: 400;
@@ -68,10 +59,8 @@
         input {
             border: none;
             border-radius: 3px;
-            // min-width: 372px;
+            padding: 5px 0;
             padding-left: 19px;
-            padding-top: 5px;
-            padding-bottom: 5px;
             width: 100%;
 
             &::placeholder {
@@ -87,7 +76,6 @@
         gap: 5px;
 
         @include respond-to("small") {
-            
             gap: 9px;
             text-align: center;
         }

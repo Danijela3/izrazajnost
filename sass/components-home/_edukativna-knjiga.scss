@@ -1,44 +1,21 @@
 .edukativna-knjiga {
-    // border-top: 1px solid $border-color;
-
-
     padding-bottom: 40px;
 
     @include respond-to("medium") {
         padding-bottom: 135px;
     }
 
-
-
-
     &__grid {
-
         display: block;
         padding-top: 80px;
         border-top: 1px solid $border-color;
-
-        @include respond-to("small") {
-            // border-top: 0;
-        }
-
-        ul {
-            margin-bottom: 39px;
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-
-        img {
-            height: 100%;
-        }
 
         .h2 {
             text-transform: uppercase;
             margin-bottom: 28px;
             padding-top: 30px;
 
-
             @include respond-to("medium") {
-                // border-top: 1px solid $border-color;
                 padding-top: 51px;
             }
         }
@@ -46,7 +23,6 @@
         p {
             margin-bottom: 22px;
             max-width: 497px;
-
         }
 
         @include respond-to("medium") {
@@ -71,39 +47,17 @@
     }
 
     &__buttons-flex {
-
-        // display: flex;
-
-        @include respond-to("small") {
-
-            // flex-direction: column;
-        }
-
-
-
-        a {
-
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            display: flex;
-
-            font-weight: 600;
-
-            @include respond-to("small") {
-                margin-left: 0;
-
-            }
-        }
-
-
         @include respond-to("small") {
             display: flex;
             gap: 18px;
         }
 
-
-
-
+        a {
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            display: flex;
+            font-weight: 600;
+        }
     }
 
     .button__primary {

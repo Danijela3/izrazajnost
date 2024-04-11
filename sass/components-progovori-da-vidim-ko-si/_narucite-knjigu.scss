@@ -1,22 +1,15 @@
 .narucite {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px 0;
     background-color: $background-light;
 
     h2 {
         text-transform: uppercase;
         margin-bottom: 30px;
-       
     }
 
     p {
         color: $background-dark;
     }
-
-    // ul {
-    //     list-style-type: disc;
-    //     padding-left: 20px;
-    // }
 
     &__buttons {
         display: flex;
@@ -35,6 +28,7 @@
     &__flex {
         @include respond-to("medium") {
             display: flex;
+            align-items: center;
         }
     }
 

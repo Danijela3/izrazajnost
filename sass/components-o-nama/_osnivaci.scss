@@ -1,57 +1,117 @@
 .osnivaci-main {
-    padding-top: 40px;
+  padding-top: 40px;
+  background-color: $background-dark;
+  margin-top: -1px;
+  position: relative;
 
-    h2 {
-        color: white;
-        text-transform: uppercase;
-        margin-bottom: 30px;
-
+  h2 {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: -80%;
+    @include respond-to("small") {
+      margin-top: -30%;
     }
+  }
 
-    h4 {
-        margin-bottom: 0;
-        color: white;
-        text-transform: uppercase;
-        margin-top: 10px;
+  h4 {
+    margin-bottom: 0;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+
+  h5 {
+    color: #d0dbdd;
+    text-transform: none;
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+
+  &__main-founders {
+    margin-bottom: 20px;
+    color: #d0dbdd;
+  }
+
+  &__beginnings {
+    margin-top: 260px;
+    max-width: 700px;
+    @include respond-to("medium") {
+      margin-top: 370px;
     }
+  }
 
-    h5 {
-        color: white;
-        text-transform: uppercase;
-        // margin-top: 10px;
-        margin-bottom: 20px;
+  p {
+    padding-bottom: 20px;
+  }
 
+  img {
+    border-radius: 8px;
+  }
+
+  &__photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 30px;
+
+    
+   
+    margin-top: 80px;
+    margin-bottom: 99px;
+    @include respond-to("small") {
+      
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+
+
+      }
+
+      @include respond-to("medium") {
+      
+       
+        column-gap: 30px;
+        row-gap: 50px;
+
+
+      }
+  }
+
+  &__main-flex {
+    @include respond-to("small") {
+      display: flex;
+      gap: 20px;
     }
+  }
 
-    &__main-founders {
-        margin-bottom: 20px;
+  &__blue-paragraph {
+    color: #d0dbdd;
+    max-width: 700px;
+  }
 
-    }
+  &__grid-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    column-gap: 20px;
+    row-gap: 30px;
+    margin-top: 80px;
+    padding-bottom: 87px;
 
-    &__beginnings {
-        padding-top: 20px;
+    @include respond-to("small") {
+      
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        
+
+      }
+
+      @include respond-to("medium") {
+      
+       
+        column-gap: 30px;
+        row-gap: 50px;
 
 
-    }
 
-    p {
-        padding-bottom: 20px;
-    }
-
-    img {
-        border-radius: 8px;
-    }
-
-    &__photos {
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        // gap: 20px;
-    }
-
-    &__main-flex {
-        display: flex;
-        gap: 20px;
-    }
-
+      }
+  }
 }

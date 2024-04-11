@@ -1,56 +1,37 @@
 .blog {
-    padding-top: 25px;
-    padding-bottom: 55px;
+    padding: 25px 0 55px;
 
     @include respond-to("small") {
-        padding-top: 50px;
-        padding-bottom: 113px;
+        padding: 50px 0 113px;
     }
 
     &__main {
-
         display: block;
-        
-        
         gap: 30px;
         margin-bottom: 100px;
 
         img {
             height: 100%;
-
-            
-                width: 100%;
-            
+            width: 100%;
         }
 
         @include respond-to("medium") {
             display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+            flex-direction: row;
+            justify-content: space-between;
         }
     }
 
     &__main-left {
-
         @include respond-to("medium") {
-        max-width: 498px;
-        }
-
-        p {
-            // margin-bottom: 18px;
+            max-width: 498px;
         }
 
         svg {
             display: flex;
             margin-left: auto;
-margin-bottom: 20px;
-            @include respond-to("small") {
-            
-            }
+            margin-bottom: 20px;
         }
-
-
-
     }
 
     h2 {
@@ -58,31 +39,24 @@ margin-bottom: 20px;
         margin-bottom: 20px;
 
         @include respond-to("medium") {
-        margin-bottom: 150px;
+            margin-bottom: 150px;
         }
-
-    }
-
-    &__text {
-        margin-bottom: 26px;
-    }
-
-    &__author {
-        margin-bottom: 18px;
     }
 
     &__sve-blog-vesti {
-
         border-bottom: 1px solid rgba(110, 106, 106, 1);
         margin-bottom: 69px;
         padding-bottom: 19px;
 
         a {
-            padding-right: 39px;
+            padding-right: 19px;
             font-weight: 600;
             font-size: 28px;
             color: rgba(0, 0, 0, 0.2);
 
+            @include respond-to("small") {
+            padding-right: 39px;
+            }
 
             &:hover {
                 color: rgba(0, 0, 0);
@@ -94,12 +68,8 @@ margin-bottom: 20px;
         display: block;
         margin-bottom: 40px;
 
-
         @include respond-to("small") {
-            
-          
             margin-bottom: 70px;
-           
 
             img {
                 width: 100%;
@@ -114,16 +84,11 @@ margin-bottom: 20px;
             gap: 42px;
             padding-bottom: 66px;
             margin-bottom: 65px;
-
         }
     }
 
     &__flex-description {
-
-
-
         @include respond-to("small") {
-           
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -132,15 +97,6 @@ margin-bottom: 20px;
         @include respond-to("medium") {
             max-width: 522px;
         }
-
-        // @include resspond-to("medium") {
-        //     max-width: 522px;
-        // }
-
-
-
-
-
     }
 
     .button__gray-background {
@@ -148,8 +104,6 @@ margin-bottom: 20px;
         color: $background-dark;
         font-weight: 600;
         text-align: center;
-
-        
     }
 
     &__button {
@@ -158,4 +112,7 @@ margin-bottom: 20px;
         justify-content: center;
     }
 
+    &__author {
+        margin-bottom: 10px;
+    }
 }
