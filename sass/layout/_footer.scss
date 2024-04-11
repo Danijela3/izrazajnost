@@ -4,15 +4,12 @@
     color: white;
     padding: 45px 0 8px 0;
 
-
-
     @include respond-to("small") {
         padding-bottom: 17px;
         padding-top: 80px;
     }
 
     &__flex {
-
         display: block;
 
         @include respond-to("small") {
@@ -24,7 +21,7 @@
     }
 
     &__left {
-        margin-bottom: 49px;
+        margin-bottom: 40px;
         display: block;
 
         a {
@@ -37,11 +34,12 @@
             gap: 64px;
             font-size: 15px;
             font-weight: 400;
+            margin-bottom: 0;
 
             p {
                 padding-bottom: 20px;
                 font-size: 17px;
-
+                margin:0;
             }
 
             a {
@@ -64,8 +62,6 @@
     }
 
     &__right {
-
-
         padding-bottom: 18px;
         display: flex;
         flex-direction: column;
@@ -77,14 +73,16 @@
             align-items: end;
             font-size: 15px;
             font-weight: 400;
-        }
+            padding-bottom: 0;
 
+        }
     }
 
     &__social {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
 
         a {
             padding-right: 22px;
@@ -107,10 +105,12 @@
     &__copyright p {
         margin-bottom: 0;
         font-size: 12px;
+        line-height: 19px;
         color: rgba(255, 255, 255, 0.8);
 
         @include respond-to("small") {
             font-size: 14px;
+            line-height: 22px;
         }
     }
 
@@ -123,37 +123,32 @@
         }
     }
 
-       
+    &__informacije {
+        margin-bottom: 30px;
 
+        @include respond-to("small") {
+            margin-bottom: 0;
+        }
+    }
 
+    &__informacije p {
+        margin-bottom: 12px;
 
-        &__informacije {
-            margin-bottom: 30px;
+        @include respond-to("small") {
+            margin-bottom: 0;
+        }
+    }
 
-            @include respond-to("small") {
-                margin-bottom: 0;
-            }
+    .paragraph-small li {
+        margin-bottom: 14px;
+        &:last-of-type {
+            margin-bottom: 0;
         }
 
-        &__informacije p {
-            margin-bottom: 12px;
-
-            @include respond-to("small") {
-                margin-bottom: 0;
-            }
+        li:first-of-type {
+            margin-bottom: 20px;
         }
-
-        .paragraph-small li {
-            margin-bottom: 14px;
-
-            li:first-of-type {
-                margin-bottom: 20px;
-            }
-        }
-
-
-
-    
+    }
 
     &__izrazajnost-logo-mobile img {
         @include respond-to("small") {

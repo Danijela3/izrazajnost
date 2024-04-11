@@ -2612,7 +2612,7 @@ body {
   }
 }
 .footer__left {
-  margin-bottom: 49px;
+  margin-bottom: 40px;
   display: block;
 }
 .footer__left a {
@@ -2625,10 +2625,12 @@ body {
     gap: 64px;
     font-size: 15px;
     font-weight: 400;
+    margin-bottom: 0;
   }
   .footer__left p {
     padding-bottom: 20px;
     font-size: 17px;
+    margin: 0;
   }
   .footer__left a {
     font-size: 15px;
@@ -2656,12 +2658,14 @@ body {
     align-items: end;
     font-size: 15px;
     font-weight: 400;
+    padding-bottom: 0;
   }
 }
 .footer__social {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 .footer__social a {
   padding-right: 22px;
@@ -2681,11 +2685,13 @@ body {
 .footer__copyright p {
   margin-bottom: 0;
   font-size: 12px;
+  line-height: 19px;
   color: rgba(255, 255, 255, 0.8);
 }
 @media (min-width: 768px) {
   .footer__copyright p {
     font-size: 14px;
+    line-height: 22px;
   }
 }
 .footer__izrazajnost-logo {
@@ -2715,6 +2721,9 @@ body {
 }
 .footer .paragraph-small li {
   margin-bottom: 14px;
+}
+.footer .paragraph-small li:last-of-type {
+  margin-bottom: 0;
 }
 .footer .paragraph-small li li:first-of-type {
   margin-bottom: 20px;

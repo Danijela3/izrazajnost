@@ -41,6 +41,8 @@ closeBtn.addEventListener("click", () => {
 //   }
 // });
 
+
+
 const modals = document.querySelectorAll('.modal');
 const playButtons = document.querySelectorAll('.play-btn');
 
@@ -125,3 +127,14 @@ modals.forEach(modal => {
 //     modal.style.display = "none";
 //   }
 // }
+
+/*
+ *  javascript
+ */
+(function () {
+
+// map scroll container - moving right inital scroll position
+const scrollContainer = document.getElementById('map-wrap');
+scrollContainer.scrollLeft = 250;
+
+})();
