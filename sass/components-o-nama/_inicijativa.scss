@@ -1,7 +1,58 @@
 .inicijativa {
-  // background-image: url(images-about/inicijativa.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(29, 73, 82, 0.9),
+      rgba(29, 73, 82, 0.9)
+    ),
+    url("images-about/inicijativa.jpg");
+
   background-position: bottom;
   min-height: 800px;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: -1px;
+
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 74px;
+
+    @include respond-to("small") {
+      display: none;
+    }
+  }
+ 
+    &__svg-desc {
+      display: none;
+
+     
+      @include respond-to("small") {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 77px;
+      svg {
+        margin-bottom: 35px;
+        
+
+        path {
+          transition: all 0.5s ease-in-out;
+        }
+
+        &:hover {
+          stroke: $primary-color;
+          path {
+            fill: $primary-color;
+
+            &.inicijativa__stroked {
+              fill: transparent;
+              stroke: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
 }

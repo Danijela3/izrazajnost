@@ -23,11 +23,25 @@
 
         &__grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(3, 1fr);
             gap: 30px;
             margin-top: 100px;
             margin-bottom: 112px;
+
+            @include respond-to("medium") {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    }
+
+    &__grid {
+        margin-top: 60px;
+        margin-bottom: 60px;
+
+        @include respond-to("medium") {
+            margin-top: 80px;
+            margin-bottom: 120px;
         }
     }
 
@@ -42,14 +56,28 @@
 
     &__podrska {
         border-bottom: 1px solid #DADADA;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+
+        @include respond-to("small") {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
 
         img {
-            margin-top: 50px;
+            // margin-top: 50px;
         }
 
         p {
             font-size: 15px;
-            margin-bottom: 19px;
+            // margin-bottom: 19px;
         }
+    }
+
+    &__logo-img {
+        height: 79px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 22px;
     }
 }

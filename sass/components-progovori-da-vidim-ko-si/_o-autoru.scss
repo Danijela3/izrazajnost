@@ -1,5 +1,6 @@
 .o-autoru {
-    padding: 40px 0;
+    // padding: 40px 0;
+    padding-bottom: 117px;
 
     h4,
     p {
@@ -8,14 +9,24 @@
 
     h4 {
         text-transform: uppercase;
+        font-weight: 600;
+        font-size: 28px;
+
+
+        @include respond-to("small") {
+        margin-bottom: 60px;
+        }
+        
     }
 
     p {
         color: $background-dark;
-        margin: 20px 0;
+        margin: 0 0 12px 0;
     }
 
     &__align-center {
+        padding-top: 50px;
+        border-top: 1px solid rgba(64, 92, 97, 0.3);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -23,5 +34,25 @@
         p {
             max-width: 695px;
         }
+    }
+
+    &__social {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 23px;
+        margin-bottom: 49px;
+
+       
+
+        path {
+            fill: $background-dark;
+        }
+    }
+
+    &__social-icon {
+        margin-right: 20px;
     }
 }

@@ -1,6 +1,8 @@
 .narucite {
-    padding: 40px 0;
+    padding: 50px 0;
     background-color: $background-light;
+
+   
 
     h2 {
         text-transform: uppercase;
@@ -23,10 +25,11 @@
 
     .button__white-button {
         margin-left: 0;
+        margin-top: 20px;
     }
 
     &__flex {
-        @include respond-to("medium") {
+        @include respond-to("small") {
             display: flex;
             align-items: center;
         }
@@ -44,5 +47,9 @@
             display: flex;
             gap: 20px;
         }
+    }
+
+    &__book-image {
+        margin-top: 20px;
     }
 }

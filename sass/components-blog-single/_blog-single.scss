@@ -7,7 +7,7 @@
         
         
 
-        @include respond-to("small") {
+        @include respond-to("medium") {
             display: flex;
             justify-content: space-between;
             gap: 30px;
@@ -25,11 +25,26 @@
     h5 {
         text-transform: uppercase;
         color: #616161;
+        
         // margin-bottom: 31px;
     }
 
     .blog-title {
         margin-bottom: 16px;
+
+       
+    }
+
+    h1 {
+
+
+        font-weight: 500;
+
+        @include respond-to("medium") {
+        font-size: 52px;
+        line-height: 54px;
+        max-width: 499px;
+        }
     }
 
     &__social-media {
@@ -58,7 +73,14 @@
         margin-bottom: 80px;
         display: flex;
         flex-direction: column;
+
+        @include respond-to("small") {
+        margin-left: 20px;
+        }
+
+        @include respond-to("medium") {
         margin-left: auto;
+        }
     }
 
     &__text-center {
@@ -71,10 +93,22 @@
     }
 
     &__photos {
-        display: flex;
         gap: 32px;
         margin-top: 69px;
+        margin-bottom: 40px;
+        @include respond-to("small") {
+        display: flex;
         margin-bottom: 80px;
+        }
+        
+    }
+
+    &__photo-single {
+        margin-bottom: 20px;
+        @include respond-to("small") {
+            margin-bottom: 0;
+
+        }
     }
 
     &__paragraph {
@@ -95,14 +129,20 @@
     }
 
    .najnoviji-tekstovi {
+margin-top: 70px;
+    @include respond-to("medium") {
     margin-top: 138px;
+    }
 
     
    }
 
    .najnoviji-tekstovi__grid {
+
+    @include respond-to("small") {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    }
    }
 
    &__social {
@@ -111,6 +151,10 @@
     justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 20px;
+
+    @include respond-to("large") {
+        margin-top: auto;
+    }
 
     p {
         margin-right: 22px;
@@ -169,6 +213,10 @@
     }
 
    
+}
+
+.blog-title {
+    max-width: none;
 }
 
 

@@ -31,18 +31,27 @@
   &__main-founders {
     margin-bottom: 20px;
     color: #d0dbdd;
+
+    @include respond-to("large") {
+      margin-bottom: 0;
+    }
   }
 
   &__beginnings {
-    margin-top: 260px;
+    // margin-top: 260px;
     max-width: 700px;
-    @include respond-to("medium") {
-      margin-top: 370px;
+    @include respond-to("large") {
+      // margin-top: 370px;
+      margin-top: 120px;
     }
   }
 
   p {
     padding-bottom: 20px;
+
+    @include respond-to("large") {
+      padding-bottom: 0;
+    }
   }
 
   img {
@@ -58,7 +67,7 @@
     
    
     margin-top: 80px;
-    margin-bottom: 99px;
+    margin-bottom: 90px;
     @include respond-to("small") {
       
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -113,5 +122,13 @@
 
 
       }
+  }
+
+  &__empty-div {
+    display: none;
+
+    @include respond-to("small") {
+      display: block;
+    }
   }
 }

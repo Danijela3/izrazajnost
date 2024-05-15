@@ -42,13 +42,13 @@ h1,
 
 h2,
 .h2 {
-    @include fluid-type(320px, 1440px, 24px, 56px);
-    @include line-height(320px, 1440px, 28px, 60px);
+    @include fluid-type(320px, 1440px, 28px, 56px);
+    @include line-height(320px, 1440px, 32px, 60px);
 }
 
 h3,
 .h3 {
-    @include fluid-type(320px, 1440px, 22px, 36px);
+    @include fluid-type(320px, 1440px, 24px, 36px);
     @include line-height(320px, 1440px, 28px, 42px);
 }
 
@@ -132,6 +132,7 @@ img {
 }
 
 .text-bold-paragraph {
-    font-weight: 600;
+    font-weight: 500;
     color: $background-dark;
+    font-size: 19px;
 }

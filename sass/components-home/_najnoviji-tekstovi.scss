@@ -34,7 +34,7 @@
 
         @include respond-to("small") {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-template-columns: 1fr 1fr 1fr;
             padding-top: 57px;
             gap: 31px;
         }

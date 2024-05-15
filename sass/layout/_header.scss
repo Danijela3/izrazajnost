@@ -8,6 +8,10 @@
     background-position: left;
     background-size: contain;
 
+    &.change {
+        background-image: none;
+    }
+
     @include respond-to("small") {
         background-image: none;
     }
@@ -16,6 +20,8 @@
         background-position: left;
         background-repeat: no-repeat;
     }
+
+    /*HEADER ROW-----------------------------------------------------------------------------------------------*/
 
     &__row {
 
@@ -27,10 +33,13 @@
         }
 
         @include respond-to("large") {
-            
+
             justify-content: space-between;
         }
     }
+
+
+    /*HEADER-LEFT-------------------------------------------------------------------------------------*/
 
     &__left {
         display: flex;
@@ -68,6 +77,9 @@
     }
 
 
+    /*HEADER RIGHT--------------------------------------------------------------------------------------------*/
+
+
     &__right {
 
 
@@ -96,10 +108,6 @@
 
     &__links {
         padding: 0;
-
-
-
-
 
         @include respond-to("medium") {
             padding: 0;
@@ -162,6 +170,8 @@
         }
     }
 
+    /*HAMBURGER BUTTON -----------------------------------------------------------------------------------*/
+
     &__hamburger-button {
 
         display: flex;
@@ -172,6 +182,7 @@
         cursor: pointer;
         background: transparent;
         border: none;
+
 
         @include respond-to("small") {
             right: 20px;
@@ -190,7 +201,11 @@
         margin: 5px auto;
         background-color: $background-dark;
         border-radius: 2px;
+
     }
+
+
+    /*MOBILE NAVIGATION------------------------------------------------------------------------------------------*/
 
 
 
@@ -200,6 +215,69 @@
         align-items: flex-start;
 
     }
+
+
+    &__mobile-navigation {
+        #hamburger-button {
+            display: block;
+
+        }
+
+        #close-button svg {
+            display: none;
+        }
+
+        @include respond-to("medium") {
+            display: none;
+        }
+    }
+
+    &__mobile-navigation.change {
+        #hamburger-button {
+            display: none;
+        }
+
+        #close-button svg {
+            display: block;
+        }
+    }
+
+    &__border-mobile {
+        border-bottom: 1px solid $border-color;
+        padding-top: 12px;
+
+        @include respond-to("medium") {
+            border-bottom: none;
+            white-space: nowrap;
+
+            &.has-submenu {
+                margin-right: 15px;
+            }
+        }
+
+    }
+
+
+
+
+    &__mobile-logo {
+        img {
+            display: block;
+
+        }
+
+        @include respond-to("medium") {
+            padding-top: 20px;
+        }
+
+        @include respond-to ("large") {
+            display: none;
+
+        }
+    }
+
+    /*NAVIGATION------------------------------------------------------------------------------------------------*/
+
 
     &__navigation {
         position: fixed;
@@ -266,8 +344,9 @@
 
         nav {
             padding-top: 49px;
-            max-width: 280px;
+            // max-width: 280px;
             margin-left: 20px;
+            margin-right: 20px;
 
             @include respond-to("small") {
                 max-width: 730px;
@@ -290,42 +369,12 @@
     }
 
 
-
-
-
     &__navigation.change {
 
         opacity: 1;
         left: 0;
-
-
     }
 
-
-    &__mobile-navigation {
-        #hamburger-button {
-            display: block;
-
-        }
-
-        #close-button svg {
-            display: none;
-        }
-
-        @include respond-to("medium") {
-            display: none;
-        }
-    }
-
-    &__mobile-navigation.change {
-        #hamburger-button {
-            display: none;
-        }
-
-        #close-button svg {
-            display: block;
-        }
-    }
 
 
     &__aktivnosti-dropdown {
@@ -338,47 +387,12 @@
         }
     }
 
+
     .button__primary {
         margin-left: 0;
         color: white;
-
-
-
     }
 
-    &__border-mobile {
-        border-bottom: 1px solid $border-color;
-        padding-top: 12px;
-
-        @include respond-to("medium") {
-            border-bottom: none;
-            white-space: nowrap;
-
-            &.has-submenu {
-                margin-right: 15px;
-            }
-        }
-
-    }
-
-
-
-
-    &__mobile-logo {
-        img {
-            display: block;
-            
-        }
-
-        @include respond-to("medium") {
-            padding-top: 20px;
-        }
-
-        @include respond-to ("large") {
-            display: none;
-          
-        }
-    }
 
     .paragraph-big {
         margin-top: 40px;
@@ -400,9 +414,5 @@
             font-size: 19px;
         }
     }
-
-
-   
-
 
 }

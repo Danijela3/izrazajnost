@@ -6,6 +6,7 @@ hamburgerBtn.addEventListener("click", () => {
   console.log('click');
   document.getElementById("navigation").classList.add("change");
   document.getElementById("mobile-navigation").classList.add("change");
+  document.getElementById("header").classList.add("change");
   html.classList.add("no-scroll");
 } );
 
@@ -16,8 +17,11 @@ closeBtn.addEventListener("click", () => {
   
   document.getElementById("navigation").classList.remove("change");
   document.getElementById("mobile-navigation").classList.remove("change");
+  document.getElementById("header").classList.remove("change");
   html.classList.remove("no-scroll");
 } );
+
+
 
 
 /*VIDEO MODAL*/

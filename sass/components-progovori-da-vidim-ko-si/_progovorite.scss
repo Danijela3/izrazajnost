@@ -1,9 +1,17 @@
 .progovorite {
-    padding: 40px 0;
+padding-bottom: 50px;
+    @include respond-to("small") {
+    padding: 60px 0;
+    }
 
     h3 {
         text-transform: uppercase;
         margin-bottom: 30px;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 42px;
+        
+
     }
 
     p {
@@ -20,6 +28,7 @@
         align-items: flex-start;
         justify-content: start;
         margin: 20px 0;
+        flex-wrap: wrap;
 
         a {
             text-transform: uppercase;
@@ -31,8 +40,16 @@
     }
 
     &__flex {
-        @include respond-to("medium") {
+
+        padding-top: 50px;
+        border-top: 1px solid rgba(64, 92, 97, 0.3);
+        @include respond-to("small") {
             display: flex;
+            gap: 20px;
+            
+        }
+
+        @include respond-to("medium") {
             gap: 55px;
         }
     }
@@ -46,9 +63,16 @@
     }
 
     &__progovori-da-svi-cuju {
+        margin-bottom: 20px;
         width: 100%;
+
+        @include respond-to("small") {
+            margin-bottom: 0;
+        }
+
         @include respond-to("medium") {
             width: 50%;
+
              }
     }
 }

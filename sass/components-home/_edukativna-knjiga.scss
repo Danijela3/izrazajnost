@@ -47,6 +47,7 @@
     }
 
     &__buttons-flex {
+        margin-top: 20px;
         @include respond-to("small") {
             display: flex;
             gap: 18px;

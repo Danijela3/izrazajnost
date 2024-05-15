@@ -20,7 +20,7 @@
 
 
 <body>
-    <header class="header-sticky-white">
+    <header class="header-sticky-white" id="header">
         <div class="container">
             <div class="header-sticky-white__row">
                 <div class="header-sticky-white__left">
@@ -112,7 +112,14 @@
                 <h2>BRANISLAV NUŠIĆ AUDIOBIOGRAFIJA</h2>
 
                 <div class="audio-pojedinacna__flex">
-                    <div><img src="images-audio-pojedinacna/audiobiografija1.jpg"></div>
+                    <div class="audio-pojedinacna__main-photo">
+                        <svg class="play-btn" data-modal="modal1" width="45" height="47" viewBox="0 0 45 47"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M42.6295 19.9265L7.27232 1.22998C4.39955 -0.288378 0 1.18506 0 4.94053V42.3245C0 45.6936 4.08817 47.7241 7.27232 46.0351L42.6295 27.3476C45.7835 25.6854 45.7935 21.5886 42.6295 19.9265Z"
+                                    fill="white" />
+                            </svg>
+                        <img src="images-audio-pojedinacna/audiobiografija1.jpg"></div>
                     <div class="audio-pojedinacna__description">
                         <p class="text-bold-paragraph">Audiobiografija Branislava Nušića predstavlja jedinstveni audio
                             zapis o životu i delu jednog
@@ -271,9 +278,18 @@
             autoplay: true,         //autoplay
             autoplaySpeed: 0,       //autoplay speed
             speed: 8200,            //added（slide speed
-            slidesToShow: 1, // Set to 1 to show only one slide at a time
-      slidesToScroll: 1,       //added (number of slide displayed
-            cssEase: "linear"
+            slidesToShow: 3, // Set to 1 to show only one slide at a time
+            // slidesToScroll: 3,       //added (number of slide displayed
+            cssEase: "linear",
+            responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+                // slidesToScroll: 3,
+              }
+            }
+           ]
         })
     </script>
 </body>

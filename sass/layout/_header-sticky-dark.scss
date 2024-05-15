@@ -178,8 +178,9 @@
         width: 20px;
         height: 2px;
         margin: 5px auto;
-        background-color: $background-dark;
+        background-color: white;
         border-radius: 2px;
+        
     }
 
 
@@ -390,3 +391,6 @@
     }
 
 }
+.header .change {
+    background-image: none;
+    }

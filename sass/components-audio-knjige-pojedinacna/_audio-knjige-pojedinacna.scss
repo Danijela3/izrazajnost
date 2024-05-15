@@ -6,10 +6,15 @@
     }
 
     h2 {
-        text-align: center;
-        margin: 30px auto 100px;
+        text-align: start;
+        margin-bottom: 50px;
         padding-top: 40px;
         border-top: 1px solid rgba(64, 92, 97, 0.3);
+
+        @include respond-to("large") {
+            margin-bottom: 100px;
+        }
+        
     }
 
     p {
@@ -25,6 +30,8 @@
             gap: 50px;
         }
     }
+
+   
 
     &__flex {
         @include respond-to("small") {
@@ -51,8 +58,11 @@
         margin: 0 auto;
     
         .slick-slide {
-            width: auto !important;
-            margin-right: 50px;
+            // width: auto !important;
+            margin-right: 30px;
+            @include respond-to("small") {
+                margin-right: 50px;
+            }
     
             &:nth-child(odd) {
                 img {
@@ -68,5 +78,16 @@
 
     .slick-prev, .slick-next {
         display: none !important;
+    }
+
+    &__main-photo {
+        position: relative;
+
+        svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
 }

@@ -1,9 +1,19 @@
 .mediji {
-    padding: 40px 0;
+padding-bottom: 50px;
 
-    h3 {
+@include respond-to("small") {
+    padding-bottom: 0;
+}
+    @include respond-to("medium") {
+    padding: 40px 0;
+    }
+
+    h2 {
         text-transform: uppercase;
         margin-bottom: 30px;
+        text-align: center;
+        font-weight: 600;
+        
     }
 
     p {
@@ -12,13 +22,44 @@
 
     &__video {
         margin-bottom: 20px;
+        position: relative;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+
+svg {
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+}
     }
 
     &__flex {
-        @include respond-to("medium") {
+
+        padding-top: 50px;
+        border-top: 1px solid rgba(64, 92, 97, 0.3);
+        @include respond-to("small") {
             display: flex;
-            gap: 20px;
+            flex-direction: column;
+            align-items: center;
+            
             // flex-direction: column;
+        }
+
+        @include respond-to("medium") {
+            gap: 20px;
+            // flex-direction: row;
+        }
+    }
+
+    &__video-group {
+        @include respond-to("medium") {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
         }
     }
 }
