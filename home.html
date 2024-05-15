@@ -299,8 +299,8 @@
 
                 </div>
 
-                <div class="map-wrap">
-                    <div id="map"></div>
+                <div class="map-wrap" id="map-wrap">  
+                   <div id="map"></div>
                 </div>
 
             </div>
@@ -963,9 +963,9 @@
                 // map.setCenter(bounds.getCenter());
                 if (window.innerWidth > 767) {
 
-                    map.fitBounds(bounds, { top: 20, right: 20, bottom: 0, left: 20 });
-
-                } else {
+                    map.fitBounds(bounds, {top:20,right:0,bottom:0,left:0});
+                
+                  }else{
 
                     map.fitBounds(bounds);
 
