@@ -1,3 +1,35 @@
+// window.onscroll= function () {
+//   var top = window.scrollX ? window.scrollX : document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop;
+//   var header = document.getElementById("header");
+//   if (top > 50){
+//     header.style.position = "fixed";
+//     header.style.height = "100px";
+//   } else {
+//     header.style.position = "relative";
+//     header.style.height = "100px";
+//   }
+// }
+
+var prevScrollpos = window.scrollY;
+window.onscroll = function() {
+  var currentScrollPos = window.scrollY;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector("header").style.top = "0";
+  } else {
+     document.querySelector("header").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+
+
+
+
+
+
+
+
+
 const hamburgerBtn = document.getElementById("hamburger-button");
 
 let html = document.getElementsByTagName('html')[0];

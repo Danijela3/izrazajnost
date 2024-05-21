@@ -1,23 +1,18 @@
 .knjiga {
-    padding: 50px 0 ;
-
-
+    padding: 50px 0;
+    margin-top: 86px;
 
     h1 {
         text-transform: uppercase;
         margin-bottom: 30px;
-text-align: center;
-
-       
+        text-align: center;
 
         @include respond-to("medium") {
-           
             max-width: 870px;
             margin: 0 auto 45px auto;
         }
 
         @include respond-to("large") {
-            
             max-width: 1152px;
         }
     }
@@ -40,9 +35,6 @@ text-align: center;
         margin: 20px 0;
         flex-wrap: wrap;
 
-        @include respond-to("small") {
-            // align-items: stretch;
-        }
     }
 
     &__buttons a {
@@ -61,10 +53,10 @@ text-align: center;
     }
 
     &__flex-right {
-       width: 100%;
+        width: 100%;
 
-       @include respond-to("small") {
-        width: 70%;
-       }
+        @include respond-to("small") {
+            width: 70%;
+        }
     }
 }

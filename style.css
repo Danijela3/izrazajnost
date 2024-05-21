@@ -423,12 +423,12 @@ h1,
 
 h2,
 .h2 {
-  font-size: 28px;
+  font-size: 26px;
 }
 @media screen and (min-width: 320px) {
   h2,
   .h2 {
-    font-size: calc(28px + 28 * (100vw - 320px) / 1120);
+    font-size: calc(26px + 30 * (100vw - 320px) / 1120);
   }
 }
 @media screen and (min-width: 1440px) {
@@ -439,12 +439,12 @@ h2,
 }
 h2,
 .h2 {
-  line-height: 32px;
+  line-height: 30px;
 }
 @media screen and (min-width: 320px) {
   h2,
   .h2 {
-    line-height: calc(32px + 28 * (100vw - 320px) / 1120);
+    line-height: calc(30px + 30 * (100vw - 320px) / 1120);
   }
 }
 @media screen and (min-width: 1440px) {
@@ -1464,6 +1464,7 @@ html {
 .najnoviji-tekstovi__grid h4 {
   text-transform: uppercase;
   font-weight: 600;
+  margin-top: 16px;
 }
 @media (min-width: 768px) {
   .najnoviji-tekstovi__grid {
@@ -1913,6 +1914,7 @@ html {
 
 .knjiga {
   padding: 50px 0;
+  margin-top: 86px;
 }
 .knjiga h1 {
   text-transform: uppercase;
@@ -2468,6 +2470,7 @@ html {
 
 .audio-pojedinacna {
   padding-top: 40px;
+  margin-top: 66px;
 }
 @media (min-width: 768px) {
   .audio-pojedinacna {
@@ -2662,7 +2665,7 @@ html {
 }
 
 .blog-single {
-  padding-top: 40px;
+  padding-top: 100px;
 }
 .blog-single__header {
   margin-bottom: 44px;
@@ -3113,6 +3116,8 @@ html {
 }
 
 .header {
+  position: fixed;
+  top: 0;
   width: 100%;
   display: flex;
   position: relative;
@@ -3385,8 +3390,6 @@ html {
 }
 .header__navigation li:last-of-type {
   width: 100%;
-  padding-top: 12px;
-  font-weight: 600;
 }
 @media (min-width: 992px) {
   .header__navigation li:last-of-type {
@@ -3456,6 +3459,16 @@ html {
 @media (min-width: 1200px) {
   .header .paragraph-big {
     font-size: 19px;
+  }
+}
+.header__language {
+  color: #1D4951;
+  font-weight: 600;
+  margin-top: 12px;
+}
+@media (min-width: 992px) {
+  .header__language {
+    margin-top: 0;
   }
 }
 
@@ -3593,6 +3606,9 @@ html {
 }
 .footer .paragraph-small li:last-of-type {
   margin-bottom: 0;
+}
+.footer .paragraph-small a {
+  color: rgba(255, 255, 255, 0.8);
 }
 .footer .paragraph-small li {
   margin-bottom: 14px;
@@ -3936,10 +3952,18 @@ html {
   }
 }
 
+.header-sticky-white {
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  transition: top 0.4s ease-in-out;
+  padding-bottom: 20px;
+  z-index: 1000;
+}
 .header-sticky-white__mobile-logo {
   display: block;
   padding-top: 20px;
-  z-index: 1000;
+  z-index: 100000;
 }
 .header-sticky-white .header .change {
   background-image: none;
@@ -4256,6 +4280,14 @@ html {
   }
 }
 
+.header-sticky-dark {
+  padding-bottom: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(29, 73, 81, 0.2);
+}
 .header-sticky-dark__mobile-logo {
   display: block;
   padding-top: 20px;

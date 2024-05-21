@@ -1,5 +1,6 @@
 .audio-pojedinacna {
     padding-top: 40px;
+    margin-top: 66px;
 
     @include respond-to("small") {
         padding-bottom: 240px;

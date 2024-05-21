@@ -30,6 +30,7 @@
         h4 {
             text-transform: uppercase;
             font-weight: 600;
+            margin-top: 16px;
         }
 
         @include respond-to("small") {

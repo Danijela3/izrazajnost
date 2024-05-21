@@ -1,5 +1,7 @@
-.header {
 
+.header {
+    position: fixed;
+    top: 0;
     width: 100%;
     display: flex;
     position: relative;
@@ -10,6 +12,8 @@
 
     &.change {
         background-image: none;
+       
+
     }
 
     @include respond-to("small") {
@@ -109,6 +113,9 @@
     &__links {
         padding: 0;
 
+     
+        
+       
         @include respond-to("medium") {
             padding: 0;
         }
@@ -246,6 +253,8 @@
         border-bottom: 1px solid $border-color;
         padding-top: 12px;
 
+       
+
         @include respond-to("medium") {
             border-bottom: none;
             white-space: nowrap;
@@ -318,7 +327,7 @@
 
         li {
 
-
+          
             padding-bottom: 12px;
 
 
@@ -330,8 +339,8 @@
 
             &:last-of-type {
                 width: 100%;
-                padding-top: 12px;
-                font-weight: 600;
+                // padding-top: 12px;
+                // font-weight: 600;
 
                 @include respond-to("medium") {
                     padding-top: 0;
@@ -373,6 +382,8 @@
 
         opacity: 1;
         left: 0;
+
+       
     }
 
 
@@ -413,6 +424,17 @@
         @include respond-to("large") {
             font-size: 19px;
         }
+    }
+
+    &__language {
+        color: #1D4951;
+        font-weight: 600;
+        margin-top: 12px;
+
+        @include respond-to("medium") {
+            margin-top: 0;
+        }
+
     }
 
 }

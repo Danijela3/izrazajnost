@@ -1,4 +1,10 @@
 .header-sticky-dark {
+padding-bottom: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    z-index: 1000;
+    background-color:rgb(29, 73, 81, 0.2);
     &__mobile-logo {
         display: block;
         padding-top: 20px;

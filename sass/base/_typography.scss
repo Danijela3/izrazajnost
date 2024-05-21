@@ -42,8 +42,8 @@ h1,
 
 h2,
 .h2 {
-    @include fluid-type(320px, 1440px, 28px, 56px);
-    @include line-height(320px, 1440px, 32px, 60px);
+    @include fluid-type(320px, 1440px, 26px, 56px);
+    @include line-height(320px, 1440px, 30px, 60px);
 }
 
 h3,

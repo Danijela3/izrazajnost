@@ -123,6 +123,7 @@
     &__informacije {
         margin-bottom: 30px;
 
+        
         @include respond-to("small") {
             margin-bottom: 0;
         }
@@ -131,9 +132,13 @@
     &__informacije p {
         margin-bottom: 12px;
 
+      
+
         @include respond-to("small") {
             margin-bottom: 0;
         }
+
+
     }
 
     .paragraph-small li {
@@ -141,6 +146,10 @@
         &:last-of-type {
             margin-bottom: 0;
         }
+    }
+
+    .paragraph-small a {
+        color: rgba(255, 255, 255, 0.8);
     }
 
     .paragraph-small li {
@@ -154,6 +163,8 @@
         li:first-of-type {
             margin-bottom: 20px;
         }
+
+        
     }
 
     &__izrazajnost-logo-mobile img {
