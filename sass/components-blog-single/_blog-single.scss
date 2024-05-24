@@ -5,14 +5,10 @@
         
         margin-bottom: 44px;
         
-        
-
         @include respond-to("medium") {
             display: flex;
             justify-content: space-between;
-            gap: 30px;
-           
-            
+            gap: 30px; 
         }
     }
 

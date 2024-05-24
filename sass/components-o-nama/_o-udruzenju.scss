@@ -1,9 +1,10 @@
 .o-udruzenju {
   background-image: url(images-about/about-us.jpg);
   min-height: 80vh;
-  margin-top: -72px;
+  margin-top: 0;
   background-repeat: no-repeat;
   background-position: left;
+  padding-top: 86px;
 
   background-size: cover;
 
@@ -11,6 +12,12 @@
 
   @include respond-to("small") {
     padding-bottom: 40%;
+    min-height: 70vh;
+   
+  }
+
+  @include respond-to("medium") {
+    margin-top: -72px;
   }
 
   h2 {
@@ -20,13 +27,18 @@
   }
 
   &__intro {
-    padding-top: 109px;
-    margin-top: -1px;
+   
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
 
+    @include respond-to("small") {
+      
+    }
+
     @include respond-to("medium") {
-      padding-top: 140px;
+      padding-top: 155px;
+      margin-top: -1px;
     }
 
     h1 {
