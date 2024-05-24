@@ -2832,7 +2832,7 @@ html {
 }
 .blog-single__flex-main span {
   background-color: white;
-  z-index: 1000;
+  z-index: 900;
   position: relative;
 }
 .blog-single__flex-main h5 {
@@ -3198,6 +3198,24 @@ html {
     height: 272px;
   }
 }
+.header__dropdown-container {
+  min-width: 1062px;
+  background-color: #F8FBFC;
+  position: absolute;
+  padding: 40px;
+  left: -280%;
+  top: 100%;
+  border-radius: 8px;
+  display: none;
+  height: 366px;
+  justify-content: space-between;
+}
+.header__photo-container {
+  max-width: 380px;
+}
+.header__photo-container img {
+  height: 100%;
+}
 @media (min-width: 768px) {
   .header__right {
     display: flex;
@@ -3236,7 +3254,6 @@ html {
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: relative;
   }
 }
 @media (min-width: 992px) and (min-width: 1200px) {
@@ -3341,6 +3358,10 @@ html {
   }
   .header__border-mobile.has-submenu {
     margin-right: 15px;
+    position: relative;
+  }
+  .header__border-mobile.has-submenu:hover__dropdown-container {
+    display: flex;
   }
 }
 .header__mobile-logo img {
@@ -3435,13 +3456,13 @@ html {
   left: 0;
 }
 .header__aktivnosti-dropdown {
-  padding-top: 23px;
-  margin-left: 34px;
-}
-@media (min-width: 992px) {
-  .header__aktivnosti-dropdown {
-    display: none !important;
-  }
+  padding-top: 38px;
+  min-width: 560px;
+  border-top: 1px solid var(--stroke, rgba(64, 92, 97, 0.3019607843));
+  display: flex;
+  align-items: left !important;
+  justify-content: flex-start !important;
+  flex-direction: column !important;
 }
 .header .button__primary {
   margin-left: 0;
@@ -3734,8 +3755,7 @@ html {
     gap: 20px;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    position: relative;
+    align-items: baseline;
   }
 }
 @media (min-width: 992px) and (min-width: 1200px) {
@@ -3771,10 +3791,13 @@ html {
 }
 @media (min-width: 992px) and (min-width: 992px) {
   .header-sticky ul svg {
-    top: 40%;
+    top: 20%;
   }
 }
 @media (min-width: 992px) {
+  .header-sticky ul svg:last-of-type {
+    top: 45%;
+  }
   .header-sticky ul .button .button__primary {
     text-transform: none;
   }
@@ -3857,7 +3880,6 @@ html {
 .header-sticky__navigation li:last-of-type {
   width: 100%;
   padding-top: 12px;
-  font-weight: 600;
 }
 @media (min-width: 992px) {
   .header-sticky__navigation li:last-of-type {
@@ -3909,13 +3931,13 @@ html {
   display: block;
 }
 .header-sticky__aktivnosti-dropdown {
-  padding-top: 23px;
-  margin-left: 34px;
-}
-@media (min-width: 992px) {
-  .header-sticky__aktivnosti-dropdown {
-    display: none !important;
-  }
+  padding-top: 38px;
+  min-width: 560px;
+  border-top: 1px solid var(--stroke, rgba(64, 92, 97, 0.3019607843));
+  display: flex;
+  align-items: left !important;
+  justify-content: flex-start !important;
+  flex-direction: column !important;
 }
 .header-sticky .button__primary {
   margin-left: 0;
@@ -3932,6 +3954,10 @@ html {
   }
   .header-sticky__border-mobile.has-submenu {
     margin-right: 15px;
+    position: relative;
+  }
+  .header-sticky__border-mobile.has-submenu:hover__dropdown-container {
+    display: flex;
   }
 }
 .header-sticky .paragraph-big {

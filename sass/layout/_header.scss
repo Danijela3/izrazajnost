@@ -84,6 +84,33 @@
 
     /*HEADER RIGHT--------------------------------------------------------------------------------------------*/
 
+   
+
+    &__dropdown-container {
+        min-width: 1062px;
+        background-color: #F8FBFC;
+        position: absolute;
+        padding: 40px;
+        left: -280%;
+        top: 100%;
+        border-radius: 8px;
+        display: none;
+        height: 366px;
+        justify-content: space-between;
+
+       
+      
+    
+}
+
+    &__photo-container {
+        max-width: 380px;
+
+        img {
+            height: 100%;
+        }
+    }
+
 
     &__right {
 
@@ -132,7 +159,7 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-            position: relative;
+            // position: relative;
 
             @include respond-to("large") {
                 gap: 20px;
@@ -262,6 +289,15 @@
 
             &.has-submenu {
                 margin-right: 15px;
+                position: relative;
+
+               
+
+                &:hover {
+                    &__dropdown-container {
+                        display: flex;
+                    }
+                }
             }
         }
 
@@ -390,13 +426,23 @@
 
 
     &__aktivnosti-dropdown {
-        padding-top: 23px;
-        margin-left: 34px;
+        padding-top: 38px;
+        min-width: 560px;
+        border-top:  1px solid var(--stroke, #405C614D);
+        // margin-top: 30px;
+        // margin-left: 34px;
+        display: flex;
+        align-items: left !important;
+        justify-content: flex-start !important;
+        flex-direction: column !important;
 
 
-        @include respond-to("medium") {
-            display: none !important;
-        }
+        // @include respond-to("medium") {
+        //     // display: none !important;
+        //     // position: absolute;
+        //     width: 200px;
+        //     top: 110%;
+        // }
     }
 
 
