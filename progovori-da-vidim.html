@@ -14,7 +14,7 @@
 
 <body>
 
-    
+
     <header class="header-sticky header-sticky--white" id="header">
         <div class="container">
             <div class="header-sticky__row">
@@ -24,15 +24,15 @@
 
                     <!--LOGO-->
                     <a href="/izrazajnost/home.html">
-                    <div class="header-sticky__mobile-logo">
-                        <img src="images/logo-mobile.svg" alt="logo">
-                    </div>
-                </a>
-<!--HEADER MOBILE-->
+                        <div class="header-sticky__mobile-logo">
+                            <img src="images/logo-mobile.svg" alt="logo">
+                        </div>
+                    </a>
+                    <!--HEADER MOBILE-->
                     <div class="header-sticky__mobile">
 
                         <div class="header-sticky__mobile-navigation" id="mobile-navigation">
-<!--HAMBURGER-BUTTON-->
+                            <!--HAMBURGER-BUTTON-->
                             <div class="header-sticky__hamburger-button" id="hamburger-button">
                                 <div class="header-sticky__span">
                                     <span></span>
@@ -58,37 +58,51 @@
                 </div>
 
 
-<!--HEADER RIGHT-->
+                <!--HEADER RIGHT-->
                 <div class="header-sticky__header-right">
                     <div class="header-sticky__navigation" id="navigation">
-<!--NAVIGATION-->
+                        <!--NAVIGATION-->
                         <nav>
                             <ul>
                                 <!--O NAMA-->
-                                <li class="header__border-mobile"><a href="/izrazajnost/o-nama.html" class="header__links">O
+                                <li class="header__border-mobile"><a href="/izrazajnost/o-nama.html"
+                                        class="header__links">O
                                         nama</a>
                                 </li>
 
                                 <!--AKTIVNOSTI UDRUZENJA-->
-                                <li class="header-sticky__border-mobile has-submenu"><a href="#aktivnosti"
-                                        class="header-sticky__links">Aktivnosti
+                                <li class="header__border-mobile has-submenu">
+                                    <a href="#aktivnosti" class="header__links">Aktivnosti
                                         udruženja<svg width="13" height="7" viewBox="0 0 13 7" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
                                                 d="M7.03033 6.53033C6.73744 6.82322 6.26256 6.82322 5.96967 6.53033L0.96967 1.53033C0.676777 1.23744 0.676777 0.762563 0.96967 0.46967C1.26256 0.176777 1.73744 0.176777 2.03033 0.46967L6.5 4.93934L10.9697 0.46967C11.2626 0.176777 11.7374 0.176777 12.0303 0.46967C12.3232 0.762563 12.3232 1.23744 12.0303 1.53033L7.03033 6.53033Z"
                                                 fill="#616161" />
                                         </svg></a>
-                                    <ul class="header-sticky__aktivnosti-dropdown">
-                                        <li class="header-sticky__dropdown-items">Edukacija dece i mladih</li>
-                                        <li class="header-sticky__dropdown-items">Edukacija prosvetnih radnika
-                                        </li>
-                                        <li class="header-sticky__dropdown-items">Karavan kulture govora</li>
-                                        <li class="header-sticky__dropdown-items">Audio knjige</li>
-                                        <li class="header-sticky__dropdown-items">Edukativna predstava u tri čina
-                                            “Izrazi se”
-                                        </li>
-                                    </ul>
+
+
+                                    <div class="header__dropdown-container">
+                                        <ul class="header__aktivnosti-dropdown">
+
+                                            <li class="header__dropdown-items"><a href="/">Edukacija dece i mladih</a>
+                                            </li>
+                                            <li class="header__dropdown-items"><a href="/">Edukacija prosvetnih
+                                                    radnika</a>
+                                            </li>
+                                            <li class="header__dropdown-items"><a href="/">Karavan kulture govora</a>
+                                            </li>
+                                            <li class="header__dropdown-items"><a href="/">Audio knjige</a></li>
+                                            <li class="header__dropdown-items"><a href="/">Edukativna predstava u tri
+                                                    čina
+                                                    “Izrazi se”</a>
+                                            </li>
+
+                                        </ul>
+
+
+                                    </div>
                                 </li>
+
 
                                 <!--KNJIGA-PROGOVORI DA VIDIM KO SI-->
                                 <li class="header-sticky__border-mobile"><a href="/izrazajnost/progovori-da-vidim.html"
@@ -100,16 +114,22 @@
                                         class="header-sticky__links">Blog</a></li>
 
                                 <!--LAT-->
-                                <li><a href="#lat" class="header__links">Lat<svg width="13" height="7"
-                                            viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <li class="header__language"><a href="#lat" class="header__links">Lat<svg width="13"
+                                            height="7" viewBox="0 0 13 7" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
                                                 d="M7.03033 6.53033C6.73744 6.82322 6.26256 6.82322 5.96967 6.53033L0.96967 1.53033C0.676777 1.23744 0.676777 0.762563 0.96967 0.46967C1.26256 0.176777 1.73744 0.176777 2.03033 0.46967L6.5 4.93934L10.9697 0.46967C11.2626 0.176777 11.7374 0.176777 12.0303 0.46967C12.3232 0.762563 12.3232 1.23744 12.0303 1.53033L7.03033 6.53033Z"
                                                 fill="#616161" />
-                                        </svg></span></a></li>
+                                        </svg></span></a>
+                                
+
+
+                                </li>
 
                                 <!--CONTACT BUTTON-->
                                 <div class="header-sticky__contact-button">
-                                    <li><a href="/izrazajnost/contact.html" class="button button__primary">Kontakt</a></li>
+                                    <li><a href="/izrazajnost/contact.html" class="button button__primary">Kontakt</a>
+                                    </li>
                                 </div>
                             </ul>
                         </nav>
@@ -175,17 +195,17 @@
 
 
                 <div class="znacaj-knjige__heading">
-                    
+
                     <h2>Zašto je ova knjiga tako posebna?</h2>
                     <div class="znacaj-knjige__video">
-                        <svg class="play-btn" data-modal="modal1" width="45" height="47" viewBox="0 0 45 47"
-                                fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M42.6295 19.9265L7.27232 1.22998C4.39955 -0.288378 0 1.18506 0 4.94053V42.3245C0 45.6936 4.08817 47.7241 7.27232 46.0351L42.6295 27.3476C45.7835 25.6854 45.7935 21.5886 42.6295 19.9265Z"
-                                    fill="white" />
-                            </svg>
-                    <img src="images-progovori/ciljna-grupa.jpg" alt="ciljna-grupa">
-                </div>
+                        <svg class="play-btn" data-modal="modal1" width="45" height="47" viewBox="0 0 45 47" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M42.6295 19.9265L7.27232 1.22998C4.39955 -0.288378 0 1.18506 0 4.94053V42.3245C0 45.6936 4.08817 47.7241 7.27232 46.0351L42.6295 27.3476C45.7835 25.6854 45.7935 21.5886 42.6295 19.9265Z"
+                                fill="white" />
+                        </svg>
+                        <img src="images-progovori/ciljna-grupa.jpg" alt="ciljna-grupa">
+                    </div>
 
                 </div>
 
@@ -222,7 +242,8 @@
                                 <li><img src="arrows/checkmark.svg" alt="checkmark">razgovetnosti (artikulaciji)</li>
                                 <li><img src="arrows/checkmark.svg" alt="checkmark">upotrebi glasa</li>
                                 <li><img src="arrows/checkmark.svg" alt="checkmark">glasnoći</li>
-                                <li><img src="arrows/checkmark.svg" alt="checkmark">ispravnom kosto-abdominalnom disanju</li>
+                                <li><img src="arrows/checkmark.svg" alt="checkmark">ispravnom kosto-abdominalnom disanju
+                                </li>
                                 <li><img src="arrows/checkmark.svg" alt="checkmark">govornoj interpunkciji</li>
                                 <li><img src="arrows/checkmark.svg" alt="checkmark">suočavanju sa tremom</li>
                             </ul>
@@ -237,55 +258,58 @@
         <!--kome  je namenjena-->
         <section class="ciljna-grupa">
             <div class="container">
-                
-                    <!--up-->
-                    <div class="ciljna-grupa__heading">
-                        <h2>Kome je knjiga namenjena</h2>
-                        <p>Knjiga koja će vam pomoći da progovorite sa puno samopouzdanja, jasno i razgovetno, da vas
-                            ceo svet razume
-                        </p>
+
+                <!--up-->
+                <div class="ciljna-grupa__heading">
+                    <h2>Kome je knjiga namenjena</h2>
+                    <p>Knjiga koja će vam pomoći da progovorite sa puno samopouzdanja, jasno i razgovetno, da vas
+                        ceo svet razume
+                    </p>
+                </div>
+
+
+
+                <div class="ciljna-grupa__flex">
+                    <div class="ciljna-grupa__flex-photo">
+                        <img src="images/knjiga.jpg" alt="knjiga">
                     </div>
 
-
-
-                        <div class="ciljna-grupa__flex">
-                            <div class="ciljna-grupa__flex-photo">
-                                <img src="images/knjiga.jpg" alt="knjiga">
-                            </div>
-
-                            <div class="ciljna-grupa__namena">
-                                <div>
-                                    <ul>
-                                        <li><img src="arrows/checkmark.svg" alt="checkmark">Deci i mladima - da nauče kako da ovladaju veštinama govora, razviju
-                                            samopouzdanje i prevaziđu tremu; kju-ar kodovi će im pomoći u navigaciji
-                                            kroz lekcije</li>
-                                        <li><img src="arrows/checkmark.svg" alt="checkmark">Učiteljima i nastavnicima - pružiće vam dragocene izvore dobrih primera,
-                                            ideje kako da gradivo učinite dodatno zanimljivim za svoje đake, ali i da im
-                                            pomognete u razvoju njihove kulture govora</li>
-                                        <li><img src="arrows/checkmark.svg" alt="checkmark">Roditeljima - dragocena podrška u procesu odgoja svoje dece, inspiracija
-                                            kako da ih usmerite i učinite ih sigurnim ljudima koji umeju da oblikuju
-                                            svoje stavove i svet oko sebe uz pomoć reči.</li>
-                                    </ul>
-                                </div>
-
-
-                                <div class="ciljna-grupa__small-text">
-                                    <p>Zavod za unapređivanje obrazovanja i vaspitanja (ZUOV) akreditovao je
-                                        knjigu "Progovori da vidim ko si" kao dodatno nastavno sredstvo za bolje
-                                        usmeno izražavanje namenjeno učenicima osnovnih i srednjih škola (od trećeg
-                                        razreda osnovne do kraja srednje škole).
-                                    </p>
-                                        <p>
-                                        Knjiga je usklađena sa nastavnim planovima i programima za predmet srpski
-                                        jezik i književnost.
-                                    </p>
-
-                                </div>
-                            </div>
+                    <div class="ciljna-grupa__namena">
+                        <div>
+                            <ul>
+                                <li><img src="arrows/checkmark.svg" alt="checkmark">Deci i mladima - da nauče kako da
+                                    ovladaju veštinama govora, razviju
+                                    samopouzdanje i prevaziđu tremu; kju-ar kodovi će im pomoći u navigaciji
+                                    kroz lekcije</li>
+                                <li><img src="arrows/checkmark.svg" alt="checkmark">Učiteljima i nastavnicima - pružiće
+                                    vam dragocene izvore dobrih primera,
+                                    ideje kako da gradivo učinite dodatno zanimljivim za svoje đake, ali i da im
+                                    pomognete u razvoju njihove kulture govora</li>
+                                <li><img src="arrows/checkmark.svg" alt="checkmark">Roditeljima - dragocena podrška u
+                                    procesu odgoja svoje dece, inspiracija
+                                    kako da ih usmerite i učinite ih sigurnim ljudima koji umeju da oblikuju
+                                    svoje stavove i svet oko sebe uz pomoć reči.</li>
+                            </ul>
                         </div>
 
-                    
-                
+
+                        <div class="ciljna-grupa__small-text">
+                            <p>Zavod za unapređivanje obrazovanja i vaspitanja (ZUOV) akreditovao je
+                                knjigu "Progovori da vidim ko si" kao dodatno nastavno sredstvo za bolje
+                                usmeno izražavanje namenjeno učenicima osnovnih i srednjih škola (od trećeg
+                                razreda osnovne do kraja srednje škole).
+                            </p>
+                            <p>
+                                Knjiga je usklađena sa nastavnim planovima i programima za predmet srpski
+                                jezik i književnost.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
             </div>
         </section>
 
@@ -331,7 +355,7 @@
                                 vrsta poblikacije je neophodna u procesu obrazovanja, jer tek unapređivanjem kulture
                                 izražavanja oni stiču znanje i veštine koje ih mogu izdvojiti od drugih i povećati
                                 njihove kompetencije.</blockquote>
-                                <blockquote>
+                            <blockquote>
                                 Knjiga može da posluži i široj javnosti, naročito nastavnicima i učiteljima, jer svaki
                                 put kada želimo jasno i glasno da kažemo ko smo i do čega nam je stalo, mi imamo dužnost
                                 da negujemo kulturu svog govora”</blockquote>
@@ -345,12 +369,13 @@
                                 jasno nam je da se autor ove jedinstvene knjige potrudio da oživi napisane reči. Jasno,
                                 precizno i tačno određuje temu i suštinu dela. Od prve do poslednje strane ističe da je
                                 za dobrog govornika potreban rad, učenje i vežba.</blockquote>
-                                <blockquote>
+                            <blockquote>
                                 Duhovito i smelo, ismeva greške u govoru i nastupima pojedinih ljudi, ali ne zato da bi
                                 se podsmevao, već da bi nas uputio na delikatnost i prisutnost javnog govora.Knjiga je
                                 potrebna svima. Pre svega deci, učenicima, ali i njihovim vaspitačima, profesorima,
                                 roditeljima.”</blockquote>
-                            <p class="text-bold-paragraph">Mr Natalija Jovanović, profesor srpskog jezika i književnosti</p>
+                            <p class="text-bold-paragraph">Mr Natalija Jovanović, profesor srpskog jezika i književnosti
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -360,8 +385,8 @@
         <!--kako je predstavljena u medijima-->
         <section class="mediji">
             <div class="container">
-                
-                    <div class="mediji__flex">
+
+                <div class="mediji__flex">
                     <h2 class="h3">kako je u medijima predstavljena knjiga "Progovori da vidim ko si"</h2>
 
                     <div class="mediji__video-group">
@@ -394,7 +419,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </section>
 
@@ -409,7 +434,8 @@
                     <!--right-->
                     <div class="progovorite__paragraph">
                         <div>
-                            <h2 class="h3">Progovorite da svi čuju i vide ko ste. Izrazite se - sigurno, rečito i moćno!</h2>
+                            <h2 class="h3">Progovorite da svi čuju i vide ko ste. Izrazite se - sigurno, rečito i moćno!
+                            </h2>
                             <p>Svi znamo da govorimo, svaki dan komuniciramo i izražavamo svoje stavove, ali često
                                 ostajemo neshvaćeni i bez sagovornika, kao da nas ne čuju. Zato je važno negovati
                                 kulturu
@@ -466,12 +492,12 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <p>Diplomirani glumac i master komunikolog.</p>
-<p>
+                    <p>
                         Osnivač Instituta „Main Point”, koji od 2012. godine realizuje obuke za javni nastup, dikciju,
                         prezentacijske i komunikacijske veštine.</p>
-<p>
+                    <p>
                         Obrazovne programe koje je kreirao pohađalo je više hiljada predstavnika različitih zanimanja,
                         kao i
                         veliki broj dece i mladih. Osnivač je i Udruženja „Izražajnost”, koje se bavi razvojem izlagačke
@@ -480,7 +506,7 @@
                         usmenog izražavanja. Autor je programa stručnog usavršavanja za prosvetne radnike „Javni govor –
                         tehnike izlagačke pismenosti”, koji je akreditovao Zavod za unapređivanje obrazovanja i
                         vaspitanja.</p>
-<p>
+                    <p>
                         Slobodan Roksandić je i narator – njegov glas može se čuti u brojnim dokumentarnim televizijskim
                         emisijama i zvučnim knjigama</p>
                 </div>

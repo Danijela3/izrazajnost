@@ -23,13 +23,6 @@ window.onscroll = function() {
 
 
 
-
-
-
-
-
-
-
 const hamburgerBtn = document.getElementById("hamburger-button");
 
 let html = document.getElementsByTagName('html')[0];
@@ -52,7 +45,6 @@ closeBtn.addEventListener("click", () => {
   document.getElementById("header").classList.remove("change");
   html.classList.remove("no-scroll");
 } );
-
 
 
 
