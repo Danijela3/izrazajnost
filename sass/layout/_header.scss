@@ -1,8 +1,6 @@
-
 .header {
-    position: fixed;
-    transition: top 0.4s ease-in-out;
-    top: 0;
+
+    transition: height 0s ease-in;
     width: 100%;
     display: flex;
     position: relative;
@@ -13,11 +11,52 @@
 
     &.change {
         background-image: none;
-       
+
+    }
+
+    .logo-small {
+        display: none;
+    }
+
+    &.change-header {
+        position: fixed;
+        width: 100%;
+        bottom: 100%;
+        transform: translateY(100%);
+        z-index: 999;
+        transition: transform 0.4s ease;
+
+
+        .logo-small {
+            display: block;
+        }
+
+        .logo-full {
+            display: none;
+        }
+
+        .paragraph-big {
+            display: none;
+
+        }
+
+        .header__navigation nav {
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+        }
+
+        .header__row {
+            align-items: center;
+        }
+
+
+
     }
 
     @include respond-to("small") {
         background-image: none;
+        background-color: white;
     }
 
     .container {
@@ -43,15 +82,14 @@
         }
     }
 
-    &__language-dropdown  li{
+    &__language-dropdown li {
 
-        
         position: absolute;
         left: 0;
-       width: 40px;
+        width: 40px;
         color: #1D4951;
         margin-right: 0 !important;
-        
+
     }
 
 
@@ -82,32 +120,32 @@
 
     }
 
-    &__left svg {
+    &__desktop-logo {
         display: none;
 
         @include respond-to("large") {
-            display: block;
-            width: 332px;
-            height: 272px;
+            display: flex;
+
         }
     }
 
 
     /*HEADER RIGHT--------------------------------------------------------------------------------------------*/
 
-   
+
 
     &__dropdown-container {
-        
-       
+
+
         margin-top: 23px;
         justify-content: space-between;
         transition: all 0.3s ease;
 
         @include respond-to("medium") {
-            margin-top: 5px;
+            // margin-top: 5px;
             display: flex;
             position: absolute;
+            top: 95%;
             opacity: 0;
             visibility: hidden;
             background-color: #F8FBFC;
@@ -115,7 +153,7 @@
             margin-left: -24px;
             border-radius: 8px;
         }
-}
+    }
 
     &__right {
 
@@ -142,40 +180,36 @@
 
     }
 
-    &__links {
-        padding: 0;
-
-        &:hover {
-            color: $primary-color;
-            font-weight: 600;
-
-            svg {
-                font-weight: 600;
-                path {
-                    fill: $primary-color;
-                   
-                }
-            }
-        }
-
-           
-        @include respond-to("medium") {
-            padding: 0;
-        }
-    }
 
     ul {
-
         display: block;
-        position: relative;
+
+        svg {
+            display: none;
+
+            @include respond-to("medium") {
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 7px;
+
+                path {
+                    // fill: $background-dark !important;
+                }
+
+
+                @include respond-to("medium") {}
+            }
+
+        }
 
         @include respond-to("medium") {
             margin-left: 20px;
             gap: 20px;
             display: flex;
             flex-direction: row;
-            align-items: center;
-        
+            align-items: baseline;
+
 
             @include respond-to("large") {
                 gap: 20px;
@@ -185,6 +219,7 @@
             li {
                 padding-top: 20px;
                 font-size: 17px;
+                position: relative;
 
                 @include respond-to("medium") {
                     padding-top: 0;
@@ -196,24 +231,11 @@
                         margin-right: 0;
                     }
                 }
-            }
 
-            svg {
-                position: absolute;
-                margin-left: 5px;
-                top: 60%;
-
-                path {
-                    fill: $background-dark !important;
-                }
-
-                @include respond-to("medium") {
-                    top: 40%;
-                }
-
-              
 
             }
+
+
 
             .button .button__primary {
                 text-transform: none;
@@ -299,23 +321,51 @@
         border-bottom: 1px solid $border-color;
         padding-top: 12px;
 
-       
+        &.has-submenu {
+
+
+            >a {
+                padding-right: 20px;
+                position: relative;
+
+            }
+        }
 
         @include respond-to("medium") {
             border-bottom: none;
             white-space: nowrap;
 
             &.has-submenu {
-                padding-right: 20px;
-            
+
+                >a {
+                    padding-bottom: 15px !important;
+                    display: block;
+                }
 
                 &:hover {
                     .header__dropdown-container {
                         opacity: 1;
                         visibility: visible;
-                        margin-top: 20px;
-                       
+                        margin-top: 0;
+
+
                     }
+
+                    >a {
+                        color: $primary-color;
+                        // font-weight: 600;
+
+                        svg {
+
+
+                            path {
+                                fill: $primary-color;
+                                // font-weight: 600;
+                            }
+                        }
+
+                    }
+
                 }
             }
         }
@@ -331,7 +381,7 @@
 
         }
 
- 
+
 
         @include respond-to("medium") {
             padding-top: 20px;
@@ -357,6 +407,7 @@
         height: 100vh;
 
         @include respond-to("medium") {
+            background-color: transparent;
             position: static;
             height: 0;
         }
@@ -364,6 +415,16 @@
 
         a {
             color: $background-dark;
+
+            &:hover {
+                color: $primary-color;
+
+                svg {
+                    path {
+                        fill: $primary-color;
+                    }
+                }
+            }
 
             &:last-of-type {
                 width: 100%;
@@ -384,7 +445,7 @@
 
         li {
 
-          
+
             padding-bottom: 12px;
 
 
@@ -396,8 +457,9 @@
 
             &:last-of-type {
                 width: 100%;
-           
+
                 @include respond-to("medium") {
+                    width: auto;
                     padding-top: 0;
                 }
 
@@ -408,7 +470,6 @@
 
         nav {
             padding-top: 49px;
-           
             margin-left: 20px;
             margin-right: 20px;
             height: 100vh;
@@ -422,6 +483,7 @@
                 padding-top: 20px;
                 max-width: 100%;
                 margin-left: 0;
+                margin-right: 0;
             }
         }
 
@@ -440,18 +502,19 @@
         opacity: 1;
         left: 0;
 
-       
+
     }
 
 
 
     &__aktivnosti-dropdown {
-      
+
         max-width: 380px;
         display: flex;
         align-items: left !important;
         justify-content: flex-start !important;
         flex-direction: column !important;
+        margin-left: 0 !important;
 
     }
 
@@ -459,6 +522,12 @@
     .button__primary {
         margin-left: 0;
         color: white;
+    }
+
+    &__dropdown-items {
+        a:hover {
+            color: $primary-color;
+        }
     }
 
 
@@ -495,4 +564,3 @@
     }
 
 }
-

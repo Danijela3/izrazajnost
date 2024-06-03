@@ -91,6 +91,7 @@
         color: $title-color;
         margin-top: 36px;
         text-align: center;
+        transition: all 0.3s ease-in-out;
 
         &:hover {
             color: white !important;

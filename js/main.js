@@ -1,28 +1,97 @@
-// window.onscroll= function () {
-//   var top = window.scrollX ? window.scrollX : document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop;
-//   var header = document.getElementById("header");
-//   if (top > 50){
-//     header.style.position = "fixed";
-//     header.style.height = "100px";
-//   } else {
-//     header.style.position = "relative";
-//     header.style.height = "100px";
-//   }
-// }
+//change header on scroll on homepage
 
+// document.addEventListener('DOMContentLoaded', function() {
+//   // Check if the current page is the specific page
+//   if (document.body.classList.contains('homepage')) {
+      // const homeHeader = document.getElementById('header-home');
+      // const stickyHeader = document.getElementById('header-sticky');
+      
+      // window.addEventListener('scroll', function() {
+      //     if (window.scrollY > 80) {
+      //         homeHeader.style.display = 'none';
+      //         stickyHeader.style.display = 'block';
+      //     } else {
+      //         homeHeader.style.display = 'block';
+      //         stickyHeader.style.display = 'none';
+      //     }
+      // });
+
+
+    //header code
+//     function checkHeader() {
+//       let windowSize = $(window).width();
+//       if (windowSize > 991) {
+//           let headerHeight = $('header').outerHeight();
+//           let windowScroll = $(window).scrollTop();
+//           if (windowScroll > headerHeight) {
+//               $('header').addClass('sticky-header');
+//               $('main').css('margin-top', `${headerHeight}px`)
+//           } else {
+//               $('header').removeClass('sticky-header');
+//               $('main').css('margin-top', `0`);  
+//           }
+//       }
+//   }
+//   checkHeader();
+//   window.addEventListener('scroll', checkHeader());
+
+//   }
+// });
+
+document.addEventListener('DOMContentLoaded', function() {
+  function checkHeader() {
+    let windowSize = window.innerWidth;
+    if (windowSize > 991) {
+      let header = document.querySelector('.header');
+      let headerHeight = header.offsetHeight;
+      let windowScroll = window.scrollY;
+      let main = document.querySelector('main');
+      
+      if (windowScroll > headerHeight) {
+        header.classList.add('change-header');
+        // main.style.marginTop = `${headerHeight}px`;
+      } else {
+        header.classList.remove('change-header');
+        // main.style.marginTop = `0`;
+      }
+    } else {
+      // Ensure to reset any styles when window size is <= 991
+      let header = document.querySelector('.header');
+      let main = document.querySelector('main');
+      header.classList.remove('change-header');
+      main.style.marginTop = `0`;
+    }
+  }
+
+  // Run checkHeader initially
+  checkHeader();
+
+  // Attach event listeners
+  window.addEventListener('scroll', checkHeader);
+  window.addEventListener('resize', checkHeader);
+});
+
+
+
+
+// header moves up on scroll
 var prevScrollpos = window.scrollY;
+var stickyEle = document.querySelector(".header-sticky");
+
+if(stickyEle) {
 window.onscroll = function() {
   var currentScrollPos = window.scrollY;
   if (prevScrollpos > currentScrollPos) {
-    document.querySelector("header").style.top = "0";
+    document.querySelector(".header-sticky").style.top = "0";
   } else {
-     document.querySelector("header").style.top = "-100px";
+     document.querySelector(".header-sticky").style.top = "-100px";
   }
   prevScrollpos = currentScrollPos;
 }
+}
 
 
-
+// hamburger menu open and close
 const hamburgerBtn = document.getElementById("hamburger-button");
 
 let html = document.getElementsByTagName('html')[0];
@@ -48,28 +117,7 @@ closeBtn.addEventListener("click", () => {
 
 
 
-/*VIDEO MODAL*/
-
-
-// const openModalBtn = document.getElementById("openModalBtn");
-// const modal = document.getElementById("videoModal1");
-// const closeModalBtn = modal.querySelector(".close");
-
-// openModalBtn.addEventListener("click", function() {
-//   modal.style.display = "block";
-// });
-
-// closeModalBtn.addEventListener("click", function() {
-//   modal.style.display = "none";
-// });
-
-// window.addEventListener("click", function(event) {
-//   if (event.target === modal) {
-//     modal.style.display = "none";
-//   }
-// });
-
-
+//play video on click
 
 const modals = document.querySelectorAll('.modal');
 const playButtons = document.querySelectorAll('.play-btn');
@@ -116,45 +164,7 @@ modals.forEach(modal => {
 
 
 
-// // Get the modal
-// var modal = document.getElementById("modal-content");
 
-// // Get the button that opens the modal
-// var btn = document.getElementById("myBtn");
-
-
-
-// // Get the <span> element that closes the modal
-// var span = document.getElementsByClassName("close")[0];
-
-
-
-// btn.addEventListener("click", () => {
-//     modal.classList.add('active');
-// })
-
-// span.addEventListener("click", () => {
-//     modal.classList.remove('active');
-// })
-
-
-
-// // // When the user clicks on the button, open the modal
-// btn.onclick = function() {
-//   modal.style.display = "block";
-// }
-
-// // // When the user clicks on <span> (x), close the modal
-// span.onclick = function() {
-//   modal.style.display = "none";
-// }
-
-// // When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// }
 
 /*
  *  javascript

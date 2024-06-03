@@ -150,6 +150,10 @@
 
     .paragraph-small a {
         color: rgba(255, 255, 255, 0.8);
+
+        &:hover {
+            color: $primary-color;
+        }
     }
 
     .paragraph-small li {

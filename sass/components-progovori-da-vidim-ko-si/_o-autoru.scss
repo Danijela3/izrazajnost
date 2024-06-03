@@ -49,6 +49,11 @@
 
         path {
             fill: $background-dark;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                fill: $primary-color;
+            }
         }
     }
 
