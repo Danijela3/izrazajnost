@@ -40,9 +40,14 @@
 
 document.addEventListener('DOMContentLoaded', function() {
   function checkHeader() {
+    let header = document.querySelector('.header');
+
+    if (!header)
+      return;
+
     let windowSize = window.innerWidth;
     if (windowSize > 991) {
-      let header = document.querySelector('.header');
+     
       let headerHeight = header.offsetHeight;
       let windowScroll = window.scrollY;
       let main = document.querySelector('main');
@@ -173,7 +178,10 @@ modals.forEach(modal => {
 
 // map scroll container - moving right inital scroll position
 const scrollContainer = document.getElementById('map-wrap');
+
+if(scrollContainer){
 scrollContainer.scrollLeft = 250;
+}
 
 })();
 

@@ -12,6 +12,15 @@
     &.change {
         background-image: none;
 
+        .header__dropdown-container {
+            padding-left: 20px;
+
+        }
+
+        nav {
+            // margin-top: 20px;
+        }
+
     }
 
     .logo-small {
@@ -184,11 +193,19 @@
     ul {
         display: block;
 
-        svg {
+        li:not(.lan-picker) svg {
             display: none;
-
             @include respond-to("medium") {
-                display: block;
+
+               display: block;
+            }
+        }
+
+
+        svg {
+
+
+           
                 position: absolute;
                 right: 0;
                 top: 7px;
@@ -198,8 +215,7 @@
                 }
 
 
-                @include respond-to("medium") {}
-            }
+            
 
         }
 
@@ -321,10 +337,11 @@
         border-bottom: 1px solid $border-color;
         padding-top: 12px;
 
+       
         &.has-submenu {
 
 
-            >a {
+            > a {
                 padding-right: 20px;
                 position: relative;
 
@@ -337,21 +354,21 @@
 
             &.has-submenu {
 
-                >a {
+                > a {
                     padding-bottom: 15px !important;
                     display: block;
                 }
 
                 &:hover {
                     .header__dropdown-container {
+                        
                         opacity: 1;
                         visibility: visible;
                         margin-top: 0;
 
-
                     }
 
-                    >a {
+                    > a {
                         color: $primary-color;
                         // font-weight: 600;
 
@@ -366,6 +383,26 @@
 
                     }
 
+                }
+            }
+        }
+
+        &.lan-picker{
+            .header__dropdown-container{
+                opacity: 0;
+                visibility: hidden;
+                height: 0;
+                margin-top: 0;
+                padding-left: 0;
+                &.open{
+
+                }
+
+                @include respond-to("medium") {
+                    height: auto;
+                    margin-top: 0;
+                    padding: 12px 15px;
+                    margin-left: 0;
                 }
             }
         }
@@ -416,15 +453,11 @@
         a {
             color: $background-dark;
 
+           @include respond-to("medium") {
             &:hover {
                 color: $primary-color;
-
-                svg {
-                    path {
-                        fill: $primary-color;
-                    }
-                }
             }
+        }
 
             &:last-of-type {
                 width: 100%;
@@ -469,7 +502,7 @@
         }
 
         nav {
-            padding-top: 49px;
+
             margin-left: 20px;
             margin-right: 20px;
             height: 100vh;
@@ -492,6 +525,11 @@
             position: static;
             height: auto;
             width: auto;
+        }
+
+        path{
+
+            transition: all 0.25s ease-in-out;     
         }
 
     }
