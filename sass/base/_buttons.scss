@@ -63,6 +63,10 @@
         color: $text-light;
         text-transform: none;
         font-weight: 400;
+
+        &:hover {
+            color: $primary-color;
+        }
     }
 
     &__white-border {

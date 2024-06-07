@@ -746,6 +746,9 @@ img {
   text-transform: none;
   font-weight: 400;
 }
+.button__gray-background:hover {
+  color: #219DD9;
+}
 .button__white-border {
   border: 1px solid white;
   color: white;
@@ -2315,6 +2318,12 @@ html {
 }
 .rekli-su p {
   color: #1D4951;
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .rekli-su p {
+    margin-top: 0;
+  }
 }
 .rekli-su ul {
   list-style-type: disc;
@@ -2609,7 +2618,11 @@ html {
 @media (min-width: 992px) {
   .blog h2 {
     margin-bottom: 150px;
+    cursor: pointer;
   }
+}
+.blog h3 {
+  cursor: pointer;
 }
 .blog__sve-blog-vesti {
   border-bottom: 1px solid rgb(110, 106, 106);
@@ -2652,6 +2665,10 @@ html {
     padding-bottom: 66px;
     margin-bottom: 65px;
   }
+}
+.blog__text svg {
+  float: right;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .blog__flex-description {
@@ -3417,6 +3434,12 @@ html {
   border-bottom: 1px solid rgba(64, 92, 97, 0.3);
   padding-top: 12px;
 }
+.header__border-mobile.lan-picker {
+  border-bottom: none;
+}
+.header__border-mobile.lan-picker a {
+  font-weight: 600;
+}
 .header__border-mobile.has-submenu > a {
   padding-right: 20px;
   position: relative;
@@ -3448,6 +3471,12 @@ html {
   height: 0;
   margin-top: 0;
   padding-left: 0;
+}
+.header__border-mobile.lan-picker .header__dropdown-container.open {
+  opacity: 1;
+  visibility: visible;
+  height: 20px;
+  margin-top: 5px;
 }
 @media (min-width: 992px) {
   .header__border-mobile.lan-picker .header__dropdown-container {

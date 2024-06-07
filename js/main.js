@@ -1,42 +1,4 @@
-//change header on scroll on homepage
 
-// document.addEventListener('DOMContentLoaded', function() {
-//   // Check if the current page is the specific page
-//   if (document.body.classList.contains('homepage')) {
-      // const homeHeader = document.getElementById('header-home');
-      // const stickyHeader = document.getElementById('header-sticky');
-      
-      // window.addEventListener('scroll', function() {
-      //     if (window.scrollY > 80) {
-      //         homeHeader.style.display = 'none';
-      //         stickyHeader.style.display = 'block';
-      //     } else {
-      //         homeHeader.style.display = 'block';
-      //         stickyHeader.style.display = 'none';
-      //     }
-      // });
-
-
-    //header code
-//     function checkHeader() {
-//       let windowSize = $(window).width();
-//       if (windowSize > 991) {
-//           let headerHeight = $('header').outerHeight();
-//           let windowScroll = $(window).scrollTop();
-//           if (windowScroll > headerHeight) {
-//               $('header').addClass('sticky-header');
-//               $('main').css('margin-top', `${headerHeight}px`)
-//           } else {
-//               $('header').removeClass('sticky-header');
-//               $('main').css('margin-top', `0`);  
-//           }
-//       }
-//   }
-//   checkHeader();
-//   window.addEventListener('scroll', checkHeader());
-
-//   }
-// });
 
 document.addEventListener('DOMContentLoaded', function() {
   function checkHeader() {
@@ -74,6 +36,20 @@ document.addEventListener('DOMContentLoaded', function() {
   // Attach event listeners
   window.addEventListener('scroll', checkHeader);
   window.addEventListener('resize', checkHeader);
+
+  //mobile lan picker dropdown
+  let windowSize = window.innerWidth;
+  if (windowSize < 992) {
+
+    let lanPicker = document.querySelector('.lan-picker > a');
+
+    lanPicker.addEventListener('click', function() {
+     let dropdown = this.nextElementSibling; 
+     console.log(dropdown);
+     dropdown.classList.toggle("open");
+    });
+  }
+
 });
 
 
@@ -118,6 +94,7 @@ closeBtn.addEventListener("click", () => {
   document.getElementById("mobile-navigation").classList.remove("change");
   document.getElementById("header").classList.remove("change");
   html.classList.remove("no-scroll");
+  
 } );
 
 

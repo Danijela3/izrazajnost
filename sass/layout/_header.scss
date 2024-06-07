@@ -15,11 +15,11 @@
         .header__dropdown-container {
             padding-left: 20px;
 
+
+
         }
 
-        nav {
-            // margin-top: 20px;
-        }
+
 
     }
 
@@ -195,9 +195,11 @@
 
         li:not(.lan-picker) svg {
             display: none;
+
             @include respond-to("medium") {
 
-               display: block;
+                display: block;
+
             }
         }
 
@@ -205,17 +207,17 @@
         svg {
 
 
-           
-                position: absolute;
-                right: 0;
-                top: 7px;
 
-                path {
-                    // fill: $background-dark !important;
-                }
+            position: absolute;
+            right: 0;
+            top: 7px;
+
+            path {
+                // fill: $background-dark !important;
+            }
 
 
-            
+
 
         }
 
@@ -274,7 +276,6 @@
         background: transparent;
         border: none;
 
-
         @include respond-to("small") {
             right: 20px;
         }
@@ -286,6 +287,7 @@
     }
 
     &__hamburger-button span {
+
         display: block;
         width: 20px;
         height: 2px;
@@ -309,6 +311,7 @@
 
 
     &__mobile-navigation {
+
         #hamburger-button {
             display: block;
 
@@ -337,7 +340,17 @@
         border-bottom: 1px solid $border-color;
         padding-top: 12px;
 
-       
+
+
+        &.lan-picker {
+            border-bottom: none;
+
+            a {
+                font-weight: 600;
+            }
+        }
+
+
         &.has-submenu {
 
 
@@ -346,6 +359,7 @@
                 position: relative;
 
             }
+
         }
 
         @include respond-to("medium") {
@@ -361,7 +375,7 @@
 
                 &:hover {
                     .header__dropdown-container {
-                        
+
                         opacity: 1;
                         visibility: visible;
                         margin-top: 0;
@@ -387,14 +401,20 @@
             }
         }
 
-        &.lan-picker{
-            .header__dropdown-container{
+        &.lan-picker {
+            .header__dropdown-container {
                 opacity: 0;
                 visibility: hidden;
                 height: 0;
                 margin-top: 0;
                 padding-left: 0;
-                &.open{
+
+                &.open {
+
+                    opacity: 1;
+                    visibility: visible;
+                    height: 20px;
+                    margin-top: 5px;
 
                 }
 
@@ -408,6 +428,8 @@
         }
 
     }
+
+
 
 
 
@@ -453,11 +475,11 @@
         a {
             color: $background-dark;
 
-           @include respond-to("medium") {
-            &:hover {
-                color: $primary-color;
+            @include respond-to("medium") {
+                &:hover {
+                    color: $primary-color;
+                }
             }
-        }
 
             &:last-of-type {
                 width: 100%;
@@ -527,9 +549,9 @@
             width: auto;
         }
 
-        path{
+        path {
 
-            transition: all 0.25s ease-in-out;     
+            transition: all 0.25s ease-in-out;
         }
 
     }
