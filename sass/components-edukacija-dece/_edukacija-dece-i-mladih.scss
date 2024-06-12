@@ -67,6 +67,26 @@
 
     &__text-right {
         max-width: 690px;
+        position: relative;
+
+        svg {
+            float: right;
+            cursor: pointer;
+        }
+
+        
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 30%;
+            background: inherit;
+            filter: blur(5px);
+            z-index: 1;
+        }
     }
 
     ul {

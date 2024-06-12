@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/js/slick.min.js" />
 </head>
 
 
@@ -207,6 +208,15 @@
                                 fill="white" />
                         </svg>
                         <img src="images-progovori/ciljna-grupa.jpg" alt="ciljna-grupa">
+
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <iframe id="videoIframe" width="944" height="533"
+                                src="https://www.youtube.com/embed/sBuPorRpkNI?si=rjQOIJQVgAQohvP2"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
                     </div>
 
                 </div>
@@ -348,7 +358,7 @@
                     <h2>Rekli su o ovoj knjizi ...</h2>
 
 
-                    <div class="rekli-su__flex">
+                    <div class="rekli-su-slider">
                         <!--left-->
                         <div class="rekli-su__flex-blockquote">
                             <blockquote>“Knjiga ‘Progovori da vidim ko si’ na sveoubuhvatan način pristupa temi kulture
@@ -379,6 +389,68 @@
                             <p class="text-bold-paragraph">Mr Natalija Jovanović, profesor srpskog jezika i književnosti
                             </p>
                         </div>
+
+                        <div class="rekli-su__flex-blockquote">
+                            <blockquote>“Knjiga ‘Progovori da vidim ko si’ na sveoubuhvatan način pristupa temi kulture
+                                govora,
+                                koja je u poslednje vreme, nažalost, poprilično zapostavljena. Deci i mladima ovakva
+                                vrsta poblikacije je neophodna u procesu obrazovanja, jer tek unapređivanjem kulture
+                                izražavanja oni stiču znanje i veštine koje ih mogu izdvojiti od drugih i povećati
+                                njihove kompetencije.</blockquote>
+                            <blockquote>
+                                Knjiga može da posluži i široj javnosti, naročito nastavnicima i učiteljima, jer svaki
+                                put kada želimo jasno i glasno da kažemo ko smo i do čega nam je stalo, mi imamo dužnost
+                                da negujemo kulturu svog govora”</blockquote>
+                            <p class="text-bold-paragraph">Prof. dr Radovan Knežević</p>
+                        </div>
+
+                        <!--right-->
+                        <div class="rekli-su__flex-blockquote">
+                            <blockquote>“Pred nam je knjiga, ali ne bilo kakva. Pred nama je ŽIVA knjiga! Od naslovne
+                                strane
+                                jasno nam je da se autor ove jedinstvene knjige potrudio da oživi napisane reči. Jasno,
+                                precizno i tačno određuje temu i suštinu dela. Od prve do poslednje strane ističe da je
+                                za dobrog govornika potreban rad, učenje i vežba.</blockquote>
+                            <blockquote>
+                                Duhovito i smelo, ismeva greške u govoru i nastupima pojedinih ljudi, ali ne zato da bi
+                                se podsmevao, već da bi nas uputio na delikatnost i prisutnost javnog govora.Knjiga je
+                                potrebna svima. Pre svega deci, učenicima, ali i njihovim vaspitačima, profesorima,
+                                roditeljima.”</blockquote>
+                            <p class="text-bold-paragraph">Mr Natalija Jovanović, profesor srpskog jezika i književnosti
+                            </p>
+                        </div>
+
+                        <div class="rekli-su__flex-blockquote">
+                            <blockquote>“Knjiga ‘Progovori da vidim ko si’ na sveoubuhvatan način pristupa temi kulture
+                                govora,
+                                koja je u poslednje vreme, nažalost, poprilično zapostavljena. Deci i mladima ovakva
+                                vrsta poblikacije je neophodna u procesu obrazovanja, jer tek unapređivanjem kulture
+                                izražavanja oni stiču znanje i veštine koje ih mogu izdvojiti od drugih i povećati
+                                njihove kompetencije.</blockquote>
+                            <blockquote>
+                                Knjiga može da posluži i široj javnosti, naročito nastavnicima i učiteljima, jer svaki
+                                put kada želimo jasno i glasno da kažemo ko smo i do čega nam je stalo, mi imamo dužnost
+                                da negujemo kulturu svog govora”</blockquote>
+                            <p class="text-bold-paragraph">Prof. dr Radovan Knežević</p>
+                        </div>
+
+                        <!--right-->
+                        <div class="rekli-su__flex-blockquote">
+                            <blockquote>“Pred nam je knjiga, ali ne bilo kakva. Pred nama je ŽIVA knjiga! Od naslovne
+                                strane
+                                jasno nam je da se autor ove jedinstvene knjige potrudio da oživi napisane reči. Jasno,
+                                precizno i tačno određuje temu i suštinu dela. Od prve do poslednje strane ističe da je
+                                za dobrog govornika potreban rad, učenje i vežba.</blockquote>
+                            <blockquote>
+                                Duhovito i smelo, ismeva greške u govoru i nastupima pojedinih ljudi, ali ne zato da bi
+                                se podsmevao, već da bi nas uputio na delikatnost i prisutnost javnog govora.Knjiga je
+                                potrebna svima. Pre svega deci, učenicima, ali i njihovim vaspitačima, profesorima,
+                                roditeljima.”</blockquote>
+                            <p class="text-bold-paragraph">Mr Natalija Jovanović, profesor srpskog jezika i književnosti
+                            </p>
+                        </div>
+
+                        
                     </div>
                 </div>
             </div>
@@ -393,6 +465,7 @@
                     <h2 class="h3">kako je u medijima predstavljena knjiga "Progovori da vidim ko si"</h2>
 
                     <div class="mediji__video-group">
+
                         <div class="mediji__video">
                             <svg class="play-btn" data-modal="modal1" width="45" height="47" viewBox="0 0 45 47"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -401,7 +474,19 @@
                                     fill="white" />
                             </svg>
                             <img src="images-progovori/mediji1.jpg" alt="mediji">
+
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <iframe id="videoIframe" width="944" height="533"
+                                    src="https://www.youtube.com/embed/sBuPorRpkNI?si=rjQOIJQVgAQohvP2"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
                         </div>
+
+
+
                         <div class="mediji__video">
                             <svg class="play-btn" data-modal="modal1" width="45" height="47" viewBox="0 0 45 47"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -410,7 +495,19 @@
                                     fill="white" />
                             </svg>
                             <img src="images-progovori/mediji2.jpg" alt="mediji">
+
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <iframe id="videoIframe" width="944" height="533"
+                                    src="https://www.youtube.com/embed/sBuPorRpkNI?si=rjQOIJQVgAQohvP2"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
                         </div>
+
+
+
                         <div class="mediji__video">
                             <svg class="play-btn" data-modal="modal1" width="45" height="47" viewBox="0 0 45 47"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -419,6 +516,15 @@
                                     fill="white" />
                             </svg>
                             <img src="images-progovori/mediji3.jpg" alt="mediji">
+
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <iframe id="videoIframe" width="944" height="533"
+                                    src="https://www.youtube.com/embed/sBuPorRpkNI?si=rjQOIJQVgAQohvP2"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -597,7 +703,9 @@
         <div class="footer__izrazajnost-logo-mobile"><img src="images/logo-full.png" alt="logo"></div>
     </footer>
 
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./dist/js/slick.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 

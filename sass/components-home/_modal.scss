@@ -1,5 +1,7 @@
 .modal {
-  display: none;
+ visibility: hidden;
+ opacity: 0;
+transition: all 0.7s ease-out;
   position: fixed;
   z-index: 1111;
   left: 0;
@@ -8,6 +10,12 @@
   height: 100%;
   overflow: auto;
   background-color: rgba(29, 73, 81, 0.2)!important;
+
+  &.open {
+    
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 .modal-content {
@@ -36,7 +44,9 @@
   cursor: pointer;
 }
 
-#videoIframe {
+.video-iframe {
   width: 100%;
+  height: auto;
   aspect-ratio: 16 / 9;
+display: block;
 }

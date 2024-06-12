@@ -1659,7 +1659,9 @@ html {
 }
 
 .modal {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.7s ease-out;
   position: fixed;
   z-index: 1111;
   left: 0;
@@ -1668,6 +1670,10 @@ html {
   height: 100%;
   overflow: auto;
   background-color: rgba(29, 73, 81, 0.2) !important;
+}
+.modal.open {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal-content {
@@ -1696,9 +1702,11 @@ html {
   cursor: pointer;
 }
 
-#videoIframe {
+.video-iframe {
   width: 100%;
+  height: auto;
   aspect-ratio: 16/9;
+  display: block;
 }
 
 .o-udruzenju {
@@ -1773,6 +1781,7 @@ html {
 @media (min-width: 768px) {
   .osnivaci-main h2 {
     margin-top: -30%;
+    text-align: center;
   }
 }
 .osnivaci-main h4 {
@@ -2698,7 +2707,7 @@ html {
 }
 
 .blog-single {
-  padding-top: 100px;
+  padding-top: 120px;
 }
 .blog-single__header {
   margin-bottom: 44px;
@@ -2767,6 +2776,7 @@ html {
 @media (min-width: 992px) {
   .blog-single__flex {
     align-items: center;
+    margin-bottom: 0;
   }
 }
 .blog-single__flex img {
@@ -2862,6 +2872,7 @@ html {
 @media (min-width: 1200px) {
   .blog-single__social {
     margin-top: auto;
+    margin-bottom: 0;
   }
 }
 .blog-single__social p {
@@ -3033,6 +3044,22 @@ html {
 }
 .edukacija-dece-i-mladih__text-right {
   max-width: 690px;
+  position: relative;
+}
+.edukacija-dece-i-mladih__text-right svg {
+  float: right;
+  cursor: pointer;
+}
+.edukacija-dece-i-mladih__text-right::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+  background: inherit;
+  filter: blur(5px);
+  z-index: 1;
 }
 .edukacija-dece-i-mladih ul {
   margin-bottom: 20px;
@@ -3202,6 +3229,16 @@ html {
 .header.change .header__dropdown-container {
   padding-left: 20px;
 }
+.header .button__primary {
+  margin-left: 0;
+  margin-top: 36px;
+  color: white;
+}
+@media (min-width: 992px) {
+  .header .button__primary {
+    margin-top: 0;
+  }
+}
 .header .logo-small {
   display: none;
 }
@@ -3212,6 +3249,9 @@ html {
   transform: translateY(100%);
   z-index: 999;
   transition: transform 0.4s ease;
+}
+.header.change-header .header__mobile-logo {
+  padding-top: 0;
 }
 .header.change-header .logo-small {
   display: block;
@@ -3228,6 +3268,7 @@ html {
 }
 .header.change-header .header__row {
   align-items: center;
+  justify-content: space-between;
 }
 @media (min-width: 768px) {
   .header {
@@ -3827,7 +3868,7 @@ html {
 .header-sticky__left {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding-top: 0;
   padding-bottom: 5px;
 }
@@ -3927,6 +3968,9 @@ html {
   background-color: white;
   padding-top: 0;
 }
+.header-sticky--white .header__border-mobile.lan-picker .header__dropdown-container.open {
+  padding-left: 0;
+}
 
 .header-sticky--dark {
   -webkit-backdrop-filter: blur(2.5px);
@@ -3961,12 +4005,18 @@ html {
 .header-sticky--dark .header__navigation a {
   color: white;
 }
+.header-sticky--dark .header__navigation nav {
+  padding-top: 0;
+}
 .header-sticky--dark .button__primary {
   margin-left: 0;
   color: rgb(138, 10, 10);
 }
 .header-sticky--dark .header__dropdown-items a:hover {
   color: #219DD9;
+}
+.header-sticky--dark .header__border-mobile.lan-picker .header__dropdown-container.open {
+  padding-left: 0;
 }
 
 .header-sticky--dark.change {

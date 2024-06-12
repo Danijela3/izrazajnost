@@ -1,5 +1,5 @@
 .blog-single {
-    padding-top: 100px;
+    padding-top: 120px;
 
     &__header {
 
@@ -81,6 +81,7 @@
 
         @include respond-to("medium") {
             align-items: center;
+            margin-bottom: 0;
         }
 
         img {
@@ -191,6 +192,7 @@
 
         @include respond-to("large") {
             margin-top: auto;
+            margin-bottom: 0;
         }
 
         p {
