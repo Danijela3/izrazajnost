@@ -148,13 +148,23 @@
 
                 <div class="audio-pojedinacna__flex">
                     <div class="audio-pojedinacna__main-photo">
-                        <svg class="play-btn" data-modal="modal1" width="45" height="47" viewBox="0 0 45 47" fill="none"
+                        <svg id="playIcon" data-modal="modal1" width="45" height="47" viewBox="0 0 45 47" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M42.6295 19.9265L7.27232 1.22998C4.39955 -0.288378 0 1.18506 0 4.94053V42.3245C0 45.6936 4.08817 47.7241 7.27232 46.0351L42.6295 27.3476C45.7835 25.6854 45.7935 21.5886 42.6295 19.9265Z"
                                 fill="white" />
                         </svg>
-                        <img src="images-audio-pojedinacna/audiobiografija1.jpg" alt="audiobiografija">
+                        
+
+                        <div class="video-container">
+                            <iframe class="video-iframe" id="youtubeVideo" width="944" height="533"
+                                    src="https://www.youtube.com/embed/sBuPorRpkNI?si=rjQOIJQVgAQohvP2"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <img src="images-audio-pojedinacna/audiobiografija1.jpg" alt="Play" class="overlay-image" id="playButton">
+                        </div>
+
                     </div>
                     <div class="audio-pojedinacna__description">
                         <p class="text-bold-paragraph">Audiobiografija Branislava Nušića predstavlja jedinstveni audio

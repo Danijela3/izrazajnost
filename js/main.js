@@ -1,25 +1,4 @@
-// //jquery slick-slider
-// $(document).ready(function () {
-// $('.rekli-su-slider').slick({
-//   centerMode: false,
-//   // centerPadding: '60px',
-//   infinite: true,
-//   slidesToShow: 1,
-//   arrows: true,
-//   prevArrow: "<button type='button' class='slick-prev'><img src='dist/img/img-home/arrow-right-light.svg'></button>",
-//   nextArrow: "<button type='button' class='slick-next'><img src='dist/img/img-home/arrow-right-light.svg'></button>",
-//   variableWidth: true,
-//   responsive: [
-//     {
-//       breakpoint: 1440,
-//       settings: {
-//         variableWidth: false,
-//       }
-//     }
 
-//   ]
-// });
-// });
 
 document.addEventListener('DOMContentLoaded', function () {
   function checkHeader() {
@@ -131,6 +110,36 @@ document.addEventListener('DOMContentLoaded', function () {
       // iframe.src = src; // Reset the src back to the original value
     }
   }
+
+
+
+
+    let playButton = document.getElementById('playButton');
+    let youtubeVideo = document.getElementById('youtubeVideo');
+    let playIcon = document.getElementById('playIcon');
+
+    playButton.addEventListener('click', function() {
+      // Append autoplay parameter to the video URL
+      let videoSrc = youtubeVideo.src;
+      if (videoSrc.indexOf('autoplay=1') === -1) {
+          youtubeVideo.src = videoSrc + "&autoplay=1";
+      }
+        playButton.style.display = 'none';
+        playIcon.style.display = 'none';
+
+    });
+
+    playIcon.addEventListener('click', function() {
+      // Append autoplay parameter to the video URL
+      let videoSrc = youtubeVideo.src;
+      if (videoSrc.indexOf('autoplay=1') === -1) {
+          youtubeVideo.src = videoSrc + "&autoplay=1";
+      }
+        playButton.style.display = 'none';
+        playIcon.style.display = 'none';
+
+    });
+
 
 
 

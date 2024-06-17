@@ -27,15 +27,38 @@
         }
     }
 
-    &__image  {
-        position: relative;
+    // &__image {
+    //     position: relative;
 
-        .play-btn {
+    //     .play-btn {
+    //         position: absolute;
+    //         width: 10%;
+    //         top: 50%;
+    //         left: 50%;
+    //         transform: translate(-50%, -50%);
+    //     }
+    // }
+
+    &__cards {
+        position: relative;
+        margin-bottom: 20px;
+        display: block;
+
+        @include respond-to("small") {
+            margin-bottom: 0;
+        }
+
+        svg {
             position: absolute;
-            width: 10%;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            width: 10%;
+            // margin: -25px 0 0 -25px;
+            transform: translate(-50%, -80%);
+        }
+
+        img {
+            height: 100%;
         }
     }
 
@@ -65,17 +88,11 @@
             flex-direction: row;
             gap: 32px;
             padding-top: 72px;
-            padding-bottom: 18px;
+            // padding-bottom: 18px;
         }
     }
 
-    &__cards {
-        margin-bottom: 20px;
-
-        @include respond-to("small") {
-            margin-bottom: 0;
-        }
-    }
+   
 
     &__image img {
         aspect-ratio: 1.53;
@@ -83,10 +100,11 @@
         border-radius: 6px;
     }
 
-   &__pogledaj-jos-button {
-  display: flex;
-justify-content: end;
+    &__pogledaj-jos-button {
+        display: flex;
+        justify-content: end;
+        margin-top: 90px;
 
-  
-   }
+
+    }
 }
